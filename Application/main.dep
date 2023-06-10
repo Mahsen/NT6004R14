@@ -2,7 +2,7 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3822865601</fileChecksum>
+  <fileChecksum>987097163</fileChecksum>
   <configuration>
     <name>_FLASH_</name>
     <outputs>
@@ -44,12 +44,24 @@
       <file>$PROJ_DIR$\_FLASH_\List\main.map</file>
       <file>$PROJ_DIR$\_FLASH_\List\main.s90</file>
       <file>$PROJ_DIR$\_FLASH_\List\main.lst</file>
+      <file>$PROJ_DIR$\_FLASH_\List\timer.s90</file>
+      <file>$PROJ_DIR$\Driver\lcd.h</file>
+      <file>$PROJ_DIR$\_FLASH_\List\timer.lst</file>
       <file>$PROJ_DIR$\_FLASH_\List\Display.s90</file>
+      <file>$PROJ_DIR$\Driver\Timer.hpp</file>
+      <file>$PROJ_DIR$\Driver\Timer.h</file>
       <file>$PROJ_DIR$\_FLASH_\Obj\lcd.r90</file>
       <file>$PROJ_DIR$\_FLASH_\List\Display.lst</file>
       <file>$PROJ_DIR$\_FLASH_\Obj\lcd.pbi</file>
+      <file>$PROJ_DIR$\Driver\timer.cpp</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\timer.r90</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\timer.pbi</file>
       <file>$PROJ_DIR$\Driver\lcd.hpp</file>
+      <file>$PROJ_DIR$\_FLASH_\List\lcd.s90</file>
       <file>$PROJ_DIR$\Module\Display.hpp</file>
+      <file>$PROJ_DIR$\_FLASH_\List\lcd.lst</file>
+      <file>$PROJ_DIR$\Driver\timer.c</file>
+      <file>$PROJ_DIR$\Driver\lcd.c</file>
       <file>$PROJ_DIR$\Driver\lcd.cpp</file>
       <file>$PROJ_DIR$\Module\Display.cpp</file>
       <file>$PROJ_DIR$\_FLASH_\Obj\Display.pbi</file>
@@ -102,11 +114,11 @@
       <inputs>
         <tool>
           <name>ICCAVR</name>
-          <file> 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25 17 43</file>
+          <file> 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25 17 52 43</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25 17 43</file>
+          <file> 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25 17 52 43</file>
         </tool>
       </inputs>
     </file>
@@ -138,7 +150,7 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 46 9 33 41 14</file>
+          <file> 58 9 33 46 14 49</file>
         </tool>
       </inputs>
     </file>
@@ -153,39 +165,39 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 31 47 7 15 28 10</file>
+          <file> 31 59 7 15 44 28 48 10</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Driver\lcd.cpp</name>
+      <name>$PROJ_DIR$\Driver\timer.cpp</name>
       <outputs>
         <tool>
           <name>ICCAVR</name>
-          <file> 39</file>
+          <file> 48</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 41</file>
+          <file> 49</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 17 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
+          <file> 42 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Module\Display.cpp</name>
+      <name>$PROJ_DIR$\Driver\timer.c</name>
       <outputs>
         <tool>
           <name>ICCAVR</name>
-          <file> 38 40 47</file>
+          <file> 38 40 48</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 46</file>
+          <file> 49</file>
         </tool>
       </outputs>
       <inputs>
@@ -199,10 +211,75 @@
         </tool>
       </inputs>
     </file>
-    <forcedrebuild>
-      <name>[MULTI_TOOL]</name>
-      <tool>XLINK</tool>
-    </forcedrebuild>
+    <file>
+      <name>$PROJ_DIR$\Driver\lcd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 51 53 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\lcd.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 51 53 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 50 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Module\Display.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 41 45 59</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 52 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
+        </tool>
+      </inputs>
+    </file>
   </configuration>
 </project>
 

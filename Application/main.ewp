@@ -1019,7 +1019,10 @@
   <group>
     <name>Driver</name>
     <file>
-      <name>$PROJ_DIR$\Driver\lcd.cpp</name>
+      <name>$PROJ_DIR$\Driver\lcd.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Driver\timer.c</name>
     </file>
   </group>
   <group>

@@ -20,7 +20,7 @@
                 
                 
             <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>980</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
-        </Static>
+        <Find-in-Files><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-in-Files></Static>
         <Windows>
             
             
@@ -32,7 +32,7 @@
                         <Factory>Workspace</Factory>
                         <Session>
                             
-                        <NodeDict><ExpandedNode>main</ExpandedNode><ExpandedNode>main/Application</ExpandedNode><ExpandedNode>main/Core</ExpandedNode><ExpandedNode>main/Main</ExpandedNode><ExpandedNode>main/Module</ExpandedNode></NodeDict></Session>
+                        <NodeDict><ExpandedNode>main</ExpandedNode><ExpandedNode>main/Application</ExpandedNode><ExpandedNode>main/Core</ExpandedNode><ExpandedNode>main/Driver</ExpandedNode><ExpandedNode>main/Main</ExpandedNode><ExpandedNode>main/Module</ExpandedNode></NodeDict></Session>
                     </Tab>
                 </Tabs>
                 
@@ -44,7 +44,7 @@
                         <Factory>Build</Factory>
                         <Session/>
                     </Tab>
-                </Tabs>
+                <Tab><Identity>TabID-2180-5632</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
                 
             <SelectedTab>0</SelectedTab></Wnd3></Windows>
         <Editor>
@@ -52,7 +52,7 @@
             
             
             
-        <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Main\main.cpp</Filename><XPos>0</XPos><YPos>33</YPos><SelStart>1553</SelStart><SelEnd>1553</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Module\Display.cpp</Filename><XPos>0</XPos><YPos>15</YPos><SelStart>265</SelStart><SelEnd>265</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Module\Display.hpp</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>524</SelStart><SelEnd>524</SelEnd></Tab><ActiveTab>2</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+        <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Main\main.cpp</Filename><XPos>0</XPos><YPos>12</YPos><SelStart>876</SelStart><SelEnd>876</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Driver\timer.c</Filename><XPos>0</XPos><YPos>57</YPos><SelStart>2352</SelStart><SelEnd>2352</SelEnd></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Core\defines.c</Filename><XPos>0</XPos><YPos>9</YPos><SelStart>740</SelStart><SelEnd>740</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Core\defines.h</Filename><XPos>0</XPos><YPos>1</YPos><SelStart>347</SelStart><SelEnd>347</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\inc\iom32.h</Filename><XPos>0</XPos><YPos>39</YPos><SelStart>1433</SelStart><SelEnd>1433</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Driver\Timer.h</Filename><XPos>0</XPos><YPos>9</YPos><SelStart>641</SelStart><SelEnd>641</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
         <Positions>
             
             

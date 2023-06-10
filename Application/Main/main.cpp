@@ -23,6 +23,7 @@
 #include "defines.h"
 #include "oven.hpp"
 #include "display.hpp"
+#include "timer.h"
 /************************************************** Defineds **********************************************************/
 /*
     Nothing
