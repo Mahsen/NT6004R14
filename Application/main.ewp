@@ -1017,6 +1017,12 @@
     </file>
   </group>
   <group>
+    <name>Driver</name>
+    <file>
+      <name>$PROJ_DIR$\Driver\lcd.cpp</name>
+    </file>
+  </group>
+  <group>
     <name>Main</name>
     <file>
       <name>$PROJ_DIR$\Main\main.cpp</name>
