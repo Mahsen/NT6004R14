@@ -1,9 +1,9 @@
 /************************************************** Description *******************************************************/
 /*
-    File : oven.cpp
+    File : display.cpp
     Programmer : Mohammad Lotfi
-    Used : Manage all tasks
-    Design Pattern : Nothing
+    Used : Manage display
+    Design Pattern : singleton
     Types of memory : Nothing
     Total Tread : Nothing
     Site : https://www.mahsen.ir
@@ -20,7 +20,7 @@
     Nothing
 */
 /************************************************** Includes **********************************************************/
-#include "oven.hpp"
+#include "display.hpp"
 /************************************************** Defineds **********************************************************/
 /*
     Nothing
@@ -30,13 +30,11 @@
     Nothing
 */
 /************************************************** Variables *********************************************************/
-/*
-    Nothing
-*/
+Display* Display::Instance = NULL;
 /************************************************** Opjects ***********************************************************/
-/*
-    Nothing
-*/
+void Display::Icon(U16 Icons, bool Show) {
+  
+}
 /************************************************** Functions *********************************************************/
 /*
     Nothing

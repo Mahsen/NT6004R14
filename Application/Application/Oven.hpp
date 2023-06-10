@@ -1,5 +1,5 @@
-#ifndef __OVEN_H
-#define __OVEN_H
+#ifndef __OVEN_HPP
+#define __OVEN_HPP
 #ifdef __cplusplus
 extern "C" {
 #endif

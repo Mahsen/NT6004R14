@@ -2,57 +2,86 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>4180581933</fileChecksum>
+  <fileChecksum>2159501582</fileChecksum>
   <configuration>
     <name>_FLASH_</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Oven.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.pbi</file>
       <file>$PROJ_DIR$\_FLASH_\List\Oven.lst</file>
-      <file>$PROJ_DIR$\Main\main.cpp</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
       <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
       <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
       <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
       <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
-      <file>$PROJ_DIR$\lnkm1280s.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
-      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
-      <file>$TOOLKIT_DIR$\inc\iom32.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
-      <file>$PROJ_DIR$\_FLASH_\List\defines.lst</file>
-      <file>$PROJ_DIR$\_FLASH_\List\defines.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\main.map</file>
-      <file>$PROJ_DIR$\Application\Oven.cpp</file>
       <file>$PROJ_DIR$\Core\defines.c</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\main.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\defines.pbi</file>
+      <file>$PROJ_DIR$\Main\main.cpp</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.r90</file>
+      <file>$PROJ_DIR$\_FLASH_\List\Oven.s90</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$PROJ_DIR$\Application\Oven.cpp</file>
       <file>$PROJ_DIR$\_FLASH_\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\_FLASH_\Exe\main.hex</file>
       <file>$PROJ_DIR$\_FLASH_\Obj\defines.r90</file>
       <file>$PROJ_DIR$\_FLASH_\Obj\main.pbd</file>
       <file>$PROJ_DIR$\Application\Oven.hpp</file>
       <file>$PROJ_DIR$\Core\defines.h</file>
+      <file>$PROJ_DIR$\_FLASH_\List\defines.s90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
+      <file>$PROJ_DIR$\_FLASH_\List\defines.lst</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\main.r90</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.h</file>
+      <file>$TOOLKIT_DIR$\inc\iom32.h</file>
+      <file>$PROJ_DIR$\Core\lnkm1280s.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\defines.pbi</file>
+      <file>$PROJ_DIR$\_FLASH_\Exe\main.hex</file>
+      <file>$PROJ_DIR$\_FLASH_\List\main.map</file>
       <file>$PROJ_DIR$\_FLASH_\List\main.s90</file>
       <file>$PROJ_DIR$\_FLASH_\List\main.lst</file>
+      <file>$PROJ_DIR$\_FLASH_\List\Display.s90</file>
+      <file>$PROJ_DIR$\_FLASH_\List\Display.lst</file>
+      <file>$PROJ_DIR$\Module\Display.hpp</file>
+      <file>$PROJ_DIR$\Module\Display.cpp</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\Display.pbi</file>
+      <file>$PROJ_DIR$\_FLASH_\Obj\Display.r90</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 31 25</file>
+          <file> 34 35</file>
         </tool>
       </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Core\defines.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 19 24 15</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
+        </tool>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\Main\main.cpp</name>
@@ -63,17 +92,17 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 30</file>
+          <file> 14</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCAVR</name>
-          <file> 35 10 20 11 14 15 8 9 7 0 17 21 16 18 19 22 13 34</file>
+          <file> 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25 17 40</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 35 10 20 11 14 15 8 9 7 0 21 16 18 19 22 13 34</file>
+          <file> 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25 17 40</file>
         </tool>
       </inputs>
     </file>
@@ -82,59 +111,21 @@
       <outputs>
         <tool>
           <name>ICCAVR</name>
-          <file> 2 4 1</file>
+          <file> 8 0 7</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 3</file>
+          <file> 9</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCAVR</name>
-          <file> 34 35 10 20 11 14 15 8 9 7 0 17 21 16 18 19 22 13</file>
+          <file> 17 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 34 35 10 20 11 14 15 8 9 7 0 21 16 18 19 22 13</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Core\defines.c</name>
-      <outputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 24 23 32</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 29</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 35 10 20 11 14 15 8 9 7 0 17 21 16 18 19 22 13</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 35 10 20 11 14 15 8 9 7 0 21 16 18 19 22 13</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\_FLASH_\Exe\main.hex</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 25</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 12 1 32 28 6</file>
+          <file> 17 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
         </tool>
       </inputs>
     </file>
@@ -143,14 +134,48 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 3 29 30</file>
+          <file> 42 9 33 14</file>
         </tool>
       </inputs>
     </file>
-    <forcedrebuild>
-      <name>[MULTI_TOOL]</name>
-      <tool>XLINK</tool>
-    </forcedrebuild>
+    <file>
+      <name>$PROJ_DIR$\_FLASH_\Exe\main.hex</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 31 43 7 15 28 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Module\Display.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 38 39 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 40 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
+        </tool>
+      </inputs>
+    </file>
   </configuration>
 </project>
 

@@ -1022,6 +1022,12 @@
       <name>$PROJ_DIR$\Main\main.cpp</name>
     </file>
   </group>
+  <group>
+    <name>Module</name>
+    <file>
+      <name>$PROJ_DIR$\Module\Display.cpp</name>
+    </file>
+  </group>
 </project>
 
 
