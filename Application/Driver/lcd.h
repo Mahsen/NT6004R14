@@ -1,5 +1,5 @@
-#ifndef __LCD_HPP
-#define __LCD_HPP
+#ifndef __LCD_H
+#define __LCD_H
 #ifdef __cplusplus
 extern "C" {
 #endif

@@ -9,7 +9,7 @@
     Site : https://www.mahsen.ir
     Tel : +989124662703
     Email : info@mahsen.ir
-    Last Update : 2023/6/10
+    Last Update : 2023/9/3
 */
 /************************************************** Warnings **********************************************************/
 /*
@@ -22,7 +22,9 @@
 /************************************************** Includes **********************************************************/
 #include "defines.h"
 /************************************************** Defineds **********************************************************/
-#define POWER_DELAY_1MS_ADJ                                                     ((U32)11)
+/*
+    Nothing
+*/
 /************************************************** Names *************************************************************/
 /*
     Nothing
@@ -52,23 +54,22 @@ void DEFINE_Delay(U32 USecond)
 U8 DEFINE_Ascii2Hex(U8 Convert)
 {
 	
-	if((Convert >= '0') && (Convert <= '9'))
-	{
-		return (Convert - '0' + 0x00);
-	}
-	else if((Convert >= 'a') && (Convert <= 'f'))
-	{
-		return (Convert - 'a' + 0x0A);			
-	}
-	else if((Convert >= 'A') && (Convert <= 'F'))
-	{
-		return (Convert - 'A' + 0x0A);			
-	}
-	else
-	{
-		return 0x00;
-	}
-
+      if((Convert >= '0') && (Convert <= '9'))
+      {
+              return (Convert - '0' + 0x00);
+      }
+      else if((Convert >= 'a') && (Convert <= 'f'))
+      {
+              return (Convert - 'a' + 0x0A);			
+      }
+      else if((Convert >= 'A') && (Convert <= 'F'))
+      {
+              return (Convert - 'A' + 0x0A);			
+      }
+      else
+      {
+              return 0x00;
+      }
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 U8* DEFINE_itoa(U64 Value, U8* Length) //0-4294967295
