@@ -10,6 +10,6 @@
 @REM 
 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\bin\avrproc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\bin\avrsim.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\bin\avrlibsupportbat.dll" --backend -B "--cpu=m32" "--enhanced_core" "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\Config\iom32.ddf" "--eeprom_size" "1024" "-d" "sim" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\bin\avrproc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\bin\avrJtagIce.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\bin\avrlibsupportbat.dll" --backend -B "--cpu=m32" "--enhanced_core" "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0\avr\Config\iom32.ddf" "--eeprom_size" "1024" "-d" "jtagIce" "--drv_communication=COM14" "--jtagice_clock=100000" "--jtagice_leave_timers_running" 
 
 
