@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2741109970</fileChecksum>
+    <configuration>
+        <name>_FLASH_</name>
+        <outputs>
+            <file>$TOOLKIT_DIR$\config\lnkm32s.xcl</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\Oven.__cstat.et</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\Oven.r90</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\timer.r90</file>
+            <file>$PROJ_DIR$\Application\Oven.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\lcd.xcl</file>
+            <file>$PROJ_DIR$\_FLASH_\List\main.lst</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\timer.xcl</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\lcd.__cstat.et</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\main.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
+            <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\Oven.xcl</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\lcd.r90</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\Display.r90</file>
+            <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\main.pbd</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\defines.r90</file>
+            <file>$PROJ_DIR$\_FLASH_\List\Display.lst</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\Display.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\iom32.h</file>
+            <file>$PROJ_DIR$\_FLASH_\List\lcd.s90</file>
+            <file>$PROJ_DIR$\_FLASH_\List\Display.s90</file>
+            <file>$PROJ_DIR$\_FLASH_\List\defines.s90</file>
+            <file>$PROJ_DIR$\_FLASH_\List\defines.lst</file>
+            <file>$PROJ_DIR$\Core\defines.h</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\defines.__cstat.et</file>
+            <file>$PROJ_DIR$\_FLASH_\List\lcd.lst</file>
+            <file>$PROJ_DIR$\_FLASH_\Exe\main.hex</file>
+            <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\main.r90</file>
+            <file>$PROJ_DIR$\Main\main.cpp</file>
+            <file>$PROJ_DIR$\Application\Oven.cpp</file>
+            <file>$PROJ_DIR$\Driver\timer.c</file>
+            <file>$PROJ_DIR$\Core\defines.c</file>
+            <file>$PROJ_DIR$\Driver\lcd.c</file>
+            <file>$PROJ_DIR$\Module\Display.cpp</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\timer.__cstat.et</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\Display.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+            <file>$PROJ_DIR$\_FLASH_\Obj\defines.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Driver\Timer.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\_FLASH_\List\main.s90</file>
+            <file>$PROJ_DIR$\_FLASH_\List\Oven.lst</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+            <file>$PROJ_DIR$\_FLASH_\List\timer.lst</file>
+            <file>$PROJ_DIR$\_FLASH_\List\Oven.s90</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+            <file>$PROJ_DIR$\_FLASH_\List\timer.s90</file>
+            <file>$PROJ_DIR$\Module\Display.hpp</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\Driver\lcd.h</file>
+            <file>$PROJ_DIR$\..\A\main.cpp</file>
+            <file>$TOOLKIT_DIR$\inc\iom16a.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.h</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\_FLASH_\Exe\main.hex</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Main\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 27 17 22 13 31 12 60</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Application\Oven.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 52 49 2</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 4 27 17 22 13 31 12 41 43 5 53 61 45 57 47 50 54 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Driver\timer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 55 51 3</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 46 27 17 22 13 31 12 41 43 5 53 61 45 57 47 50 54 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Core\defines.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 25 26 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 42</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 27 17 22 13 31 12 41 43 5 53 61 45 57 47 50 54 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Driver\lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 23 29 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 58 27 17 22 13 31 12 41 43 5 53 61 45 57 47 50 54 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Module\Display.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 24 20 16</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 56 27 17 22 13 31 12 41 43 5 53 61 45 57 47 50 54 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

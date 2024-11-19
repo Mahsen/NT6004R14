@@ -1,406 +1,335 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <fileVersion>2</fileVersion>
-  <fileChecksum>987097163</fileChecksum>
-  <configuration>
-    <name>_FLASH_</name>
-    <outputs>
-      <file>$PROJ_DIR$\Core\defines.c</file>
-<<<<<<< HEAD
-=======
-      <file>$PROJ_DIR$\Main\main.cpp</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Oven.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
-      <file>$PROJ_DIR$\Application\Oven.cpp</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\defines.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\main.pbd</file>
-      <file>$PROJ_DIR$\Application\Oven.hpp</file>
-      <file>$PROJ_DIR$\Core\defines.h</file>
-      <file>$PROJ_DIR$\_FLASH_\List\defines.s90</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
-      <file>$PROJ_DIR$\_FLASH_\List\defines.lst</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\main.r90</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.h</file>
-      <file>$TOOLKIT_DIR$\inc\iom32.h</file>
-      <file>$PROJ_DIR$\Core\lnkm1280s.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\defines.pbi</file>
-      <file>$PROJ_DIR$\_FLASH_\Exe\main.hex</file>
-      <file>$PROJ_DIR$\_FLASH_\List\main.map</file>
-      <file>$PROJ_DIR$\_FLASH_\List\main.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\main.lst</file>
-      <file>$PROJ_DIR$\_FLASH_\List\timer.s90</file>
-      <file>$PROJ_DIR$\Driver\lcd.h</file>
-      <file>$PROJ_DIR$\_FLASH_\List\timer.lst</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Display.s90</file>
-      <file>$PROJ_DIR$\Driver\Timer.hpp</file>
-      <file>$PROJ_DIR$\Driver\Timer.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\lcd.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Display.lst</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\lcd.pbi</file>
-      <file>$PROJ_DIR$\Driver\timer.cpp</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\timer.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\timer.pbi</file>
-      <file>$PROJ_DIR$\Driver\lcd.hpp</file>
-      <file>$PROJ_DIR$\_FLASH_\List\lcd.s90</file>
-      <file>$PROJ_DIR$\Module\Display.hpp</file>
-      <file>$PROJ_DIR$\_FLASH_\List\lcd.lst</file>
-      <file>$PROJ_DIR$\Driver\timer.c</file>
-      <file>$PROJ_DIR$\Driver\lcd.c</file>
->>>>>>> aba72c900c0687a0f868e9ae2257e9c76ac9d466
-      <file>$PROJ_DIR$\Driver\lcd.cpp</file>
-      <file>$PROJ_DIR$\Main\main.cpp</file>
-      <file>$PROJ_DIR$\Module\Display.cpp</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Application\Oven.cpp</file>
-      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Exe\main.hex</file>
-      <file>$PROJ_DIR$\Application\Oven.hpp</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\lcd.pbi</file>
-      <file>$PROJ_DIR$\_FLASH_\List\main.lst</file>
-      <file>$PROJ_DIR$\Core\lnkm1280s.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.h</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Display.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\main.s90</file>
-      <file>$PROJ_DIR$\Driver\lcd.hpp</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Oven.lst</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Oven.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.r90</file>
-      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\defines.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\iom32.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
-      <file>$PROJ_DIR$\_FLASH_\List\defines.lst</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\defines.r90</file>
-      <file>$PROJ_DIR$\_FLASH_\List\main.map</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
-      <file>$PROJ_DIR$\_FLASH_\List\defines.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Display.pbi</file>
-      <file>$PROJ_DIR$\_FLASH_\List\lcd.s90</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\main.pbd</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Oven.pbi</file>
-      <file>$PROJ_DIR$\_FLASH_\List\Display.lst</file>
-      <file>$PROJ_DIR$\_FLASH_\List\lcd.lst</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\lcd.r90</file>
-      <file>$PROJ_DIR$\Module\Display.hpp</file>
-      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\main.r90</file>
-      <file>$PROJ_DIR$\Core\defines.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
-      <file>$PROJ_DIR$\_FLASH_\Obj\Display.r90</file>
-    </outputs>
-    <file>
-      <name>$PROJ_DIR$\Core\defines.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 24</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 32 28 29</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46 7 26 23 44 48 27 8 41 4 40 14 36 31 47 25</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 46 7 26 23 44 48 27 8 41 4 15 40 14 36 31 47 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Driver\lcd.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 11</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 34 39 42</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 18 46 7 26 23 44 48 27 8 41 4 40 14 36 31 47 25</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 18 46 7 26 23 44 48 27 8 41 4 15 40 14 36 31 47 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Main\main.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 5</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 17 12 45</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-<<<<<<< HEAD
-          <name>BICOMP</name>
-          <file> 46 7 26 23 44 48 27 8 41 4 40 14 36 31 47 25 10 43</file>
-=======
-          <name>ICCAVR</name>
-          <file> 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25 17 52 43</file>
->>>>>>> aba72c900c0687a0f868e9ae2257e9c76ac9d466
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 46 7 26 23 44 48 27 8 41 4 15 40 14 36 31 47 25 10 43</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Module\Display.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-<<<<<<< HEAD
-          <file> 33</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 16 38 49</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 43 46 7 26 23 44 48 27 8 41 4 40 14 36 31 47 25</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 43 46 7 26 23 44 48 27 8 41 4 15 40 14 36 31 47 25</file>
-=======
-          <file> 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25 17 52 43</file>
->>>>>>> aba72c900c0687a0f868e9ae2257e9c76ac9d466
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Application\Oven.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 37</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 21 20 22</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 10 46 7 26 23 44 48 27 8 41 4 40 14 36 31 47 25</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 10 46 7 26 23 44 48 27 8 41 4 15 40 14 36 31 47 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 9 30</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\_FLASH_\Exe\main.hex</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 30</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 13 49 22 29 42 45 19</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\_FLASH_\Obj\main.pbd</name>
-      <inputs>
-        <tool>
-          <name>BILINK</name>
-<<<<<<< HEAD
-          <file> 33 37 24 11 5</file>
-        </tool>
-      </inputs>
-    </file>
-=======
-          <file> 58 9 33 46 14 49</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\_FLASH_\Exe\main.hex</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 35</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 31 59 7 15 44 28 48 10</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Driver\timer.cpp</name>
-      <outputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 48</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 49</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 42 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Driver\timer.c</name>
-      <outputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 38 40 48</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 49</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 43 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 43 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Driver\lcd.c</name>
-      <outputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 51 53 44</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 39 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 39 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Driver\lcd.cpp</name>
-      <outputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 51 53 44</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 50 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Module\Display.cpp</name>
-      <outputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 41 45 59</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 52 18 3 30 4 32 23 1 2 12 11 29 27 21 22 26 20 25</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 52 18 3 30 4 32 23 1 2 12 11 27 21 22 26 20 25</file>
-        </tool>
-      </inputs>
-    </file>
->>>>>>> aba72c900c0687a0f868e9ae2257e9c76ac9d466
-  </configuration>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>1218672091</fileChecksum>
+    <configuration>
+        <name>Output</name>
+        <outputs>
+            <file>$PROJ_DIR$\Output\Obj\timer.r90</file>
+            <file>$PROJ_DIR$\Output\Obj\main.r90</file>
+            <file>$PROJ_DIR$\Output\Obj\gpio.xcl</file>
+            <file>$PROJ_DIR$\Output\Obj\timer.xcl</file>
+            <file>$PROJ_DIR$\Output\Obj\lcd.__cstat.et</file>
+            <file>$PROJ_DIR$\Output\Obj\gpio.r90</file>
+            <file>$PROJ_DIR$\Driver\gpio.h</file>
+            <file>$PROJ_DIR$\Core\defines.c</file>
+            <file>$PROJ_DIR$\Driver\gpio.c</file>
+            <file>$PROJ_DIR$\Driver\lcd.c</file>
+            <file>$PROJ_DIR$\Driver\timer.c</file>
+            <file>$PROJ_DIR$\Driver\Timer.h</file>
+            <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+            <file>$PROJ_DIR$\Output\Obj\main.pbd</file>
+            <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
+            <file>$PROJ_DIR$\Core\defines.h</file>
+            <file>$PROJ_DIR$\Output\Obj\timer.__cstat.et</file>
+            <file>$PROJ_DIR$\Output\Obj\lcd.r90</file>
+            <file>$PROJ_DIR$\Main\main.cpp</file>
+            <file>$PROJ_DIR$\Output\Obj\lcd.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+            <file>$PROJ_DIR$\Output\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\Output\Obj\defines.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-64-n.r90</file>
+            <file>$PROJ_DIR$\Output\Exe\main.hex</file>
+            <file>$PROJ_DIR$\Output\Obj\Relay.xcl</file>
+            <file>$PROJ_DIR$\Output\Obj\Relay.r90</file>
+            <file>$PROJ_DIR$\Output\Obj\Clock.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
+            <file>$TOOLKIT_DIR$\src\template\cfgm32.xcl</file>
+            <file>$PROJ_DIR$\Output\Obj\Clock.r90</file>
+            <file>$TOOLKIT_DIR$\inc\iom32.h</file>
+            <file>$PROJ_DIR$\Output\Obj\adc.xcl</file>
+            <file>$PROJ_DIR$\Output\Obj\adc.r90</file>
+            <file>$PROJ_DIR$\Output\Obj\Switch.r90</file>
+            <file>$PROJ_DIR$\Output\Obj\Switch.xcl</file>
+            <file>$PROJ_DIR$\Module\Switch.c</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-64-n.h</file>
+            <file>$PROJ_DIR$\Module\Temp.h</file>
+            <file>$PROJ_DIR$\Module\Switch.h</file>
+            <file>$PROJ_DIR$\Output\Obj\Temp.r90</file>
+            <file>$PROJ_DIR$\Output\Obj\Temp.xcl</file>
+            <file>$PROJ_DIR$\Module\Relay.c</file>
+            <file>$PROJ_DIR$\Module\Relay.h</file>
+            <file>$PROJ_DIR$\Output\Obj\Temp.__cstat.et</file>
+            <file>$PROJ_DIR$\Output\Obj\Relay.__cstat.et</file>
+            <file>$PROJ_DIR$\Driver\adc.c</file>
+            <file>$PROJ_DIR$\Driver\adc.h</file>
+            <file>$PROJ_DIR$\Module\Clock.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Output\Obj\gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\Driver\lcd.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+            <file>$PROJ_DIR$\Output\List\main.map</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Output\Obj\defines.r90</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\Output\Obj\defines.xcl</file>
+            <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Output\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\Output\Obj\Switch.__cstat.et</file>
+            <file>$PROJ_DIR$\Output\Obj\Clock.__cstat.et</file>
+            <file>$PROJ_DIR$\Output\Obj\adc.__cstat.et</file>
+            <file>$PROJ_DIR$\Module\Clock.h</file>
+            <file>$PROJ_DIR$\Module\Temp.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Core\defines.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 57</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Driver\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 2</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 6 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Driver\lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 51 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Driver\timer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 0</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 11 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Main\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 1</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 64</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52 6 43 47 39 51 11 69 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Output\Exe\main.hex</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 53</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 29 60 33 30 57 5 17 1 26 34 40 0 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Module\Switch.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 39 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52 47 43 51 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Module\Relay.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 43 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Driver\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 68</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 47 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 24 53</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Module\Clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 27</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 69 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52 11 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Module\Temp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 40</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 38 15 12 31 20 28 14 62 63 55 49 37 54 65 58 56 61 52 47 51</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
 </project>
-
-

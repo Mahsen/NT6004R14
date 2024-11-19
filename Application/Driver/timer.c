@@ -9,7 +9,7 @@
     Site : https://www.mahsen.ir
     Tel : +989124662703
     Email : info@mahsen.ir
-    Last Update : 2023/6/10
+    Last Update : 2024/9/13
 */
 /************************************************** Warnings **********************************************************/
 /*
@@ -52,16 +52,17 @@ struct struct_TIMER
 void __init_Timer(void)
 {
     // Set Timer1 in CTC mode
-    TCCR1B |= (1 << WGM12);
+    TCCR1B_WGM12 = SET;
     
     // Set prescaler to divide by 64
-    TCCR1B |= (1 << CS11) | (1 << CS10);
+    TCCR1B_CS11 = SET;
+    TCCR1B_CS10 = SET;
     
     // Set initial compare value for 1 ms interrupt
     OCR1A = CalculateCompareValue(1000); //18749;
     
     // Enable compare interrupt
-    TIMSK |= (1 << OCIE1A);
+    TIMSK_OCIE1A = SET;
     
     // Enable global interrupts
     __enable_interrupt();
@@ -76,7 +77,7 @@ U32 CalculateCompareValue(U64 frequency)
     return (U32)compareValue;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-U8  TIMER_Add(U64 Period_ms, void (*Event) (void))
+U8 TIMER_Add(U64 Period_ms, void (*Event) (void))
 {
   /// Check max Channel Timer
   if(Timer.Added<TIMER_MAXCHANNELTIMER)

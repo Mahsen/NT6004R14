@@ -1,0 +1,126 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// IAR C/C++ Compiler V7.30.3.1659 for Microchip AVR      13/Sep/2024  17:30:02
+// Copyright 1996-2020 IAR Systems AB.
+//
+//    Source file  =  
+//        D:\Project\NewStructure\NT6004R14\Application\Driver\lcd.c
+//    Command line =  
+//        -f C:\Users\Mohammad\AppData\Local\Temp\EWB4F9.tmp
+//        (D:\Project\NewStructure\NT6004R14\Application\Driver\lcd.c --cpu=m32
+//        -ms -o D:\Project\NewStructure\NT6004R14\Application\_FLASH_\Obj -D
+//        NDEBUG -lC D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List
+//        -lA D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List
+//        --initializers_in_flash --no_cse --no_inline --no_code_motion
+//        --no_cross_call --no_clustering --no_tbaa --debug
+//        -DENABLE_BIT_DEFINITIONS -e -I
+//        D:\Project\NewStructure\NT6004R14\Application\Application\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Core\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Driver\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Config\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Module\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Class\\ --eeprom_size
+//        1024 --dlib --dlib_config "C:\Program Files (x86)\IAR
+//        Systems\Embedded Workbench 8.4\avr\LIB\DLIB\dlAVR-3s-ec_mul-sf-n.h"
+//        --ec++ -On)
+//    Locale       =  English_USA.1252
+//    List file    =  
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List\lcd.s90
+//
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME lcd
+
+        RTMODEL "__64bit_doubles", "disabled"
+        RTMODEL "__SystemLibrary", "DLib"
+        RTMODEL "__cpu", "3"
+        RTMODEL "__cpu_name", "ATmega32"
+        RTMODEL "__dlib_file_descriptor", "0"
+        RTMODEL "__enhanced_core", "enabled"
+        RTMODEL "__has_elpm", "false"
+        RTMODEL "__memory_model", "2"
+        RTMODEL "__rt_version", "3"
+        RTMODEL "__vtable_memory", "__nearflash"
+
+        RSEG CSTACK:DATA:NOROOT(0)
+        RSEG RSTACK:DATA:NOROOT(0)
+
+        PUBWEAK __?EEARH
+        PUBWEAK __?EEARL
+        PUBWEAK __?EECR
+        PUBWEAK __?EEDR
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01cH
+__?EECR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01dH
+__?EEDR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01eH
+__?EEARL:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01fH
+__?EEARH:
+
+        END
+// D:\Project\NewStructure\NT6004R14\Application\Driver\lcd.c
+//    1 /************************************************** Description *******************************************************/
+//    2 /*
+//    3     File : lcd.c
+//    4     Programmer : Mohammad Lotfi
+//    5     Used : Manage lcd pinout
+//    6     Design Pattern : Nothing
+//    7     Types of memory : Nothing
+//    8     Total Tread : Nothing
+//    9     Site : https://www.mahsen.ir
+//   10     Tel : +989124662703
+//   11     Email : info@mahsen.ir
+//   12     Last Update : 2023/6/10
+//   13 */
+//   14 /************************************************** Warnings **********************************************************/
+//   15 /*
+//   16     Nothing
+//   17 */
+//   18 /************************************************** Wizards ***********************************************************/
+//   19 /*
+//   20     Nothing
+//   21 */
+//   22 /************************************************** Includes **********************************************************/
+//   23 #include "lcd.h"
+//   24 /************************************************** Defineds **********************************************************/
+//   25 /*
+//   26     Nothing
+//   27 */
+//   28 /************************************************** Names *************************************************************/
+//   29 /*
+//   30     Nothing
+//   31 */
+//   32 /************************************************** Variables *********************************************************/
+//   33 /*
+//   34     Nothing
+//   35 */
+//   36 /************************************************** Opjects ***********************************************************/
+//   37 /*
+//   38     Nothing
+//   39 */
+//   40 /************************************************** Functions *********************************************************/
+//   41 /*
+//   42     Nothing
+//   43 */
+//   44 /************************************************** Tasks *************************************************************/
+//   45 /*
+//   46     Nothing
+//   47 */
+//   48 /************************************************** Vectors ***********************************************************/
+//   49 /*
+//   50     Nothing
+//   51 */
+//   52 /**********************************************************************************************************************/
+//   53 
+// 
+//
+// 
+//
+//
+//Errors: none
+//Warnings: none

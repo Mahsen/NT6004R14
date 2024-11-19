@@ -1,0 +1,858 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// IAR C/C++ Compiler V7.30.3.1659 for Microchip AVR      13/Sep/2024  17:30:02
+// Copyright 1996-2020 IAR Systems AB.
+//
+//    Source file  =  
+//        D:\Project\NewStructure\NT6004R14\Application\Core\defines.c
+//    Command line =  
+//        -f C:\Users\Mohammad\AppData\Local\Temp\EWB4F7.tmp
+//        (D:\Project\NewStructure\NT6004R14\Application\Core\defines.c
+//        --cpu=m32 -ms -o
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\Obj -D NDEBUG
+//        -lC D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List -lA
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List
+//        --initializers_in_flash --no_cse --no_inline --no_code_motion
+//        --no_cross_call --no_clustering --no_tbaa --debug
+//        -DENABLE_BIT_DEFINITIONS -e -I
+//        D:\Project\NewStructure\NT6004R14\Application\Application\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Core\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Driver\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Config\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Module\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Class\\ --eeprom_size
+//        1024 --dlib --dlib_config "C:\Program Files (x86)\IAR
+//        Systems\Embedded Workbench 8.4\avr\LIB\DLIB\dlAVR-3s-ec_mul-sf-n.h"
+//        --ec++ -On)
+//    Locale       =  English_USA.1252
+//    List file    =  
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List\defines.s90
+//
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME defines
+
+        RTMODEL "__64bit_doubles", "disabled"
+        RTMODEL "__SystemLibrary", "DLib"
+        RTMODEL "__cpu", "3"
+        RTMODEL "__cpu_name", "ATmega32"
+        RTMODEL "__dlib_file_descriptor", "0"
+        RTMODEL "__enhanced_core", "enabled"
+        RTMODEL "__has_elpm", "false"
+        RTMODEL "__memory_model", "2"
+        RTMODEL "__rt_version", "3"
+        RTMODEL "__vtable_memory", "__nearflash"
+
+        RSEG CSTACK:DATA:NOROOT(0)
+        RSEG RSTACK:DATA:NOROOT(0)
+
+        EXTERN ?EPILOGUE_B16_L09
+        EXTERN ?LL_CMP_R8_L12
+        EXTERN ?PROLOGUE16_L09
+        EXTERN ?Register_R10_is_cg_reg
+        EXTERN ?Register_R11_is_cg_reg
+        EXTERN ?Register_R12_is_cg_reg
+        EXTERN ?Register_R13_is_cg_reg
+        EXTERN ?Register_R14_is_cg_reg
+        EXTERN ?Register_R15_is_cg_reg
+        EXTERN ?Register_R4_is_cg_reg
+        EXTERN ?Register_R5_is_cg_reg
+        EXTERN ?Register_R6_is_cg_reg
+        EXTERN ?Register_R7_is_cg_reg
+        EXTERN ?Register_R8_is_cg_reg
+        EXTERN ?Register_R9_is_cg_reg
+        EXTERN ?ULL_DIV_L12
+        EXTERN ?ULL_MOD_L12
+        EXTERN ?need_segment_init
+
+        PUBWEAK `?<Segment init: NEAR_I>`
+        PUBWEAK `?<Segment init: NEAR_Z>`
+        PUBLIC DEFINE_Ascii2Hex
+        PUBLIC DEFINE_Delay
+        PUBLIC DEFINE_Delay_ms
+        PUBLIC DEFINE_itoa
+        PUBWEAK __?EEARH
+        PUBWEAK __?EEARL
+        PUBWEAK __?EECR
+        PUBWEAK __?EEDR
+        PUBWEAK __Constant_0_0
+        PUBWEAK __Constant_186a0_0
+        PUBWEAK __Constant_2710_0
+        PUBWEAK __Constant_3b9aca00_0
+        PUBWEAK __Constant_3e8_0
+        PUBWEAK __Constant_540be400_2
+        PUBWEAK __Constant_5f5e100_0
+        PUBWEAK __Constant_64_0
+        PUBWEAK __Constant_989680_0
+        PUBWEAK __Constant_a_0
+        PUBWEAK __Constant_f4240_0
+        
+          CFI Names cfiNames0
+          CFI StackFrame CFA_Y Y DATA
+          CFI StackFrame CFA_SP SP DATA
+          CFI VirtualResource ?RetPad:1, ?RetHigh:8, ?RetLow:8, ?Ret:17
+          CFI Resource R0:8, R1:8, R2:8, R3:8, R4:8, R5:8, R6:8, R7:8, R8:8, R9:8
+          CFI Resource R10:8, R11:8, R12:8, R13:8, R14:8, R15:8, R16:8, R17:8
+          CFI Resource R18:8, R19:8, R20:8, R21:8, R22:8, R23:8, R24:8, R25:8
+          CFI Resource R26:8, R27:8, R28:8, R29:8, R30:8, R31:8
+          CFI Resource ?RetHighByteMask:8, SP:16, SPH:8, SPL:8, Y:16
+          CFI ResourceParts ?Ret ?RetHigh, ?RetLow, ?RetPad
+          CFI ResourceParts SP SPH, SPL
+          CFI ResourceParts Y R29, R28
+          CFI EndNames cfiNames0
+        
+          CFI Common cfiCommon0 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign 1
+          CFI ReturnAddress ?Ret CODE
+          CFI CFA_Y Y+0
+          CFI CFA_SP SP+2
+          CFI ?RetPad 0
+          CFI ?RetHigh and(load(1, DATA, sub(CFA_SP, 1)), ?RetHighByteMask)
+          CFI ?RetLow Frame(CFA_SP, 0)
+          CFI ?Ret Concat
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 SameValue
+          CFI R13 SameValue
+          CFI R14 SameValue
+          CFI R15 SameValue
+          CFI R16 Undefined
+          CFI R17 Undefined
+          CFI R18 Undefined
+          CFI R19 Undefined
+          CFI R20 Undefined
+          CFI R21 Undefined
+          CFI R22 Undefined
+          CFI R23 Undefined
+          CFI R24 SameValue
+          CFI R25 SameValue
+          CFI R26 SameValue
+          CFI R27 SameValue
+          CFI R28 Undefined
+          CFI R29 Undefined
+          CFI R30 Undefined
+          CFI R31 Undefined
+          CFI ?RetHighByteMask SameValue
+          CFI SPH Undefined
+          CFI SPL Undefined
+          CFI EndCommon cfiCommon0
+        
+        
+          CFI Common cfiCommon1 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign 1
+          CFI ReturnAddress ?Ret CODE
+          CFI CFA_Y Y+2
+          CFI CFA_SP SP+2
+          CFI ?RetPad 0
+          CFI ?RetHigh and(load(1, DATA, sub(CFA_SP, 1)), ?RetHighByteMask)
+          CFI ?RetLow Frame(CFA_SP, 0)
+          CFI ?Ret Concat
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 SameValue
+          CFI R13 SameValue
+          CFI R14 SameValue
+          CFI R15 SameValue
+          CFI R16 Undefined
+          CFI R17 Undefined
+          CFI R18 Undefined
+          CFI R19 Undefined
+          CFI R20 Undefined
+          CFI R21 Undefined
+          CFI R22 Undefined
+          CFI R23 Undefined
+          CFI R24 SameValue
+          CFI R25 SameValue
+          CFI R26 SameValue
+          CFI R27 SameValue
+          CFI R28 Undefined
+          CFI R29 Undefined
+          CFI R30 Undefined
+          CFI R31 Undefined
+          CFI ?RetHighByteMask SameValue
+          CFI SPH Undefined
+          CFI SPL Undefined
+          CFI EndCommon cfiCommon1
+        
+// D:\Project\NewStructure\NT6004R14\Application\Core\defines.c
+//    1 /************************************************** Description *******************************************************/
+//    2 /*
+//    3     File : define.c
+//    4     Programmer : Mohammad Lotfi
+//    5     Used : Refrence and define basical for a microcontroller
+//    6     Design Pattern : Nothing
+//    7     Types of memory : Nothing
+//    8     Total Tread : Nothing
+//    9     Site : https://www.mahsen.ir
+//   10     Tel : +989124662703
+//   11     Email : info@mahsen.ir
+//   12     Last Update : 2023/9/3
+//   13 */
+//   14 /************************************************** Warnings **********************************************************/
+//   15 /*
+//   16     Nothing
+//   17 */
+//   18 /************************************************** Wizards ***********************************************************/
+//   19 /*
+//   20     Nothing
+//   21 */
+//   22 /************************************************** Includes **********************************************************/
+//   23 #include "defines.h"
+//   24 /************************************************** Defineds **********************************************************/
+//   25 /*
+//   26     Nothing
+//   27 */
+//   28 /************************************************** Names *************************************************************/
+//   29 /*
+//   30     Nothing
+//   31 */
+//   32 /************************************************** Variables *********************************************************/
+//   33 /*
+//   34     Nothing
+//   35 */
+//   36 /************************************************** Opjects ***********************************************************/
+//   37 /*
+//   38     Nothing
+//   39 */
+//   40 /************************************************** Functions *********************************************************/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//   41 void DEFINE_Delay_ms(U32 MSecond)
+DEFINE_Delay_ms:
+          CFI Block cfiBlock0 Using cfiCommon0
+          CFI Function DEFINE_Delay_ms
+          CFI NoCalls
+        CODE
+//   42 {
+//   43 
+//   44 }
+        RET
+          CFI EndBlock cfiBlock0
+//   45 /*--------------------------------------------------------------------------------------------------------------------*/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//   46 void DEFINE_Delay(U32 USecond)
+DEFINE_Delay:
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function DEFINE_Delay
+          CFI NoCalls
+        CODE
+//   47 {
+//   48   while(USecond--)
+??DEFINE_Delay_0:
+        MOVW    R19:R18, R17:R16
+        MOVW    R17:R16, R19:R18
+        SUBI    R16, 1
+        SBCI    R17, 0
+        OR      R18, R19
+        BREQ    ??DEFINE_Delay_1
+//   49   {
+//   50         for(U32 i=0; i<(16/6); i++);
+        LDI     R30, 0
+        LDI     R31, 0
+??DEFINE_Delay_2:
+        CPI     R30, 2
+        LDI     R18, 0
+        CPC     R31, R18
+        BRCC    ??DEFINE_Delay_0
+        ADIW    R31:R30, 1
+        RJMP    ??DEFINE_Delay_2
+//   51   }
+//   52 }
+??DEFINE_Delay_1:
+        RET
+          CFI EndBlock cfiBlock1
+//   53 /*--------------------------------------------------------------------------------------------------------------------*/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//   54 U8 DEFINE_Ascii2Hex(U8 Convert)
+DEFINE_Ascii2Hex:
+          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Function DEFINE_Ascii2Hex
+          CFI NoCalls
+        CODE
+//   55 {
+        MOV     R17, R16
+//   56 	
+//   57       if((Convert >= '0') && (Convert <= '9'))
+        CPI     R17, 48
+        BRCS    ??DEFINE_Ascii2Hex_0
+        CPI     R17, 58
+        BRCC    ??DEFINE_Ascii2Hex_0
+//   58       {
+//   59               return (Convert - '0' + 0x00);
+        SUBI    R17, 48
+        MOV     R16, R17
+        RET
+//   60       }
+//   61       else if((Convert >= 'a') && (Convert <= 'f'))
+??DEFINE_Ascii2Hex_0:
+        CPI     R17, 97
+        BRCS    ??DEFINE_Ascii2Hex_1
+        CPI     R17, 103
+        BRCC    ??DEFINE_Ascii2Hex_1
+//   62       {
+//   63               return (Convert - 'a' + 0x0A);			
+        SUBI    R17, 87
+        MOV     R16, R17
+        RET
+//   64       }
+//   65       else if((Convert >= 'A') && (Convert <= 'F'))
+??DEFINE_Ascii2Hex_1:
+        CPI     R17, 65
+        BRCS    ??DEFINE_Ascii2Hex_2
+        CPI     R17, 71
+        BRCC    ??DEFINE_Ascii2Hex_2
+//   66       {
+//   67               return (Convert - 'A' + 0x0A);			
+        SUBI    R17, 55
+        MOV     R16, R17
+        RET
+//   68       }
+//   69       else
+//   70       {
+//   71               return 0x00;
+??DEFINE_Ascii2Hex_2:
+        LDI     R16, 0
+        RET
+//   72       }
+//   73 }
+          CFI EndBlock cfiBlock2
+//   74 /*--------------------------------------------------------------------------------------------------------------------*/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//   75 U8* DEFINE_itoa(U64 Value, U8* Length) //0-4294967295
+DEFINE_itoa:
+          CFI Block cfiBlock3 Using cfiCommon1
+          CFI Function DEFINE_itoa
+        CODE
+//   76 {   
+        CALL    ?PROLOGUE16_L09
+          CFI R15 Frame(CFA_Y, -3)
+          CFI R14 Frame(CFA_Y, -4)
+          CFI R13 Frame(CFA_Y, -5)
+          CFI R12 Frame(CFA_Y, -6)
+          CFI R11 Frame(CFA_Y, -7)
+          CFI R10 Frame(CFA_Y, -8)
+          CFI R9 Frame(CFA_Y, -9)
+          CFI R8 Frame(CFA_Y, -10)
+          CFI R7 Frame(CFA_Y, -11)
+          CFI R6 Frame(CFA_Y, -12)
+          CFI R5 Frame(CFA_Y, -13)
+          CFI R4 Frame(CFA_Y, -14)
+          CFI R27 Frame(CFA_Y, -15)
+          CFI R26 Frame(CFA_Y, -16)
+          CFI R25 Frame(CFA_Y, -17)
+          CFI R24 Frame(CFA_Y, -18)
+          CFI CFA_Y Y+18
+        REQUIRE ?Register_R4_is_cg_reg
+        REQUIRE ?Register_R5_is_cg_reg
+        REQUIRE ?Register_R6_is_cg_reg
+        REQUIRE ?Register_R7_is_cg_reg
+        REQUIRE ?Register_R8_is_cg_reg
+        REQUIRE ?Register_R9_is_cg_reg
+        REQUIRE ?Register_R10_is_cg_reg
+        REQUIRE ?Register_R11_is_cg_reg
+        REQUIRE ?Register_R12_is_cg_reg
+        REQUIRE ?Register_R13_is_cg_reg
+        REQUIRE ?Register_R14_is_cg_reg
+        REQUIRE ?Register_R15_is_cg_reg
+        MOVW    R9:R8, R17:R16
+        MOVW    R11:R10, R19:R18
+        MOVW    R13:R12, R21:R20
+        MOVW    R15:R14, R23:R22
+//   77     static U8 str_b[10+1]; 
+//   78     
+//   79     if(Value==0)
+        LDI     R30, LOW(__Constant_0_0)
+        LDI     R31, (__Constant_0_0) >> 8
+          CFI FunCall ?LL_CMP_R8_L12
+        CALL    ?LL_CMP_R8_L12
+        BRNE    ??DEFINE_itoa_0
+//   80     {
+//   81         *Length = 1;
+        LDD     R30, Y+16
+        LDD     R31, Y+17
+        LDI     R16, 1
+        ST      Z, R16
+//   82         return (U8*)"0";
+        LDI     R16, LOW(`?<Constant "0">`)
+        LDI     R17, (`?<Constant "0">`) >> 8
+        RJMP    ??DEFINE_itoa_1
+//   83     }
+//   84         
+//   85     str_b[9] = (Value%10)+'0';
+??DEFINE_itoa_0:
+        LDI     R26, LOW(__Constant_a_0)
+        LDI     R27, (__Constant_a_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        SUBI    R16, 208
+        STS     (??str_b + 9), R16
+//   86     str_b[8] = ((Value%100)/10)+'0';
+        LDI     R26, LOW(__Constant_64_0)
+        LDI     R27, (__Constant_64_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_a_0)
+        LDI     R27, (__Constant_a_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 8), R16
+//   87     str_b[7] = ((Value%1000)/100)+'0';
+        LDI     R26, LOW(__Constant_3e8_0)
+        LDI     R27, (__Constant_3e8_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_64_0)
+        LDI     R27, (__Constant_64_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 7), R16
+//   88     str_b[6] = ((Value%10000)/1000)+'0';
+        LDI     R26, LOW(__Constant_2710_0)
+        LDI     R27, (__Constant_2710_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_3e8_0)
+        LDI     R27, (__Constant_3e8_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 6), R16
+//   89     str_b[5] = ((Value%100000)/10000)+'0';
+        LDI     R26, LOW(__Constant_186a0_0)
+        LDI     R27, (__Constant_186a0_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_2710_0)
+        LDI     R27, (__Constant_2710_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 5), R16
+//   90     str_b[4] = ((Value%1000000)/100000)+'0';
+        LDI     R26, LOW(__Constant_f4240_0)
+        LDI     R27, (__Constant_f4240_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_186a0_0)
+        LDI     R27, (__Constant_186a0_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 4), R16
+//   91     str_b[3] = ((Value%10000000)/1000000)+'0';
+        LDI     R26, LOW(__Constant_989680_0)
+        LDI     R27, (__Constant_989680_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_f4240_0)
+        LDI     R27, (__Constant_f4240_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 3), R16
+//   92     str_b[2] = ((Value%100000000)/10000000)+'0';
+        LDI     R26, LOW(__Constant_5f5e100_0)
+        LDI     R27, (__Constant_5f5e100_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_989680_0)
+        LDI     R27, (__Constant_989680_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 2), R16
+//   93     str_b[1] = ((Value%1000000000)/100000000)+'0';
+        LDI     R26, LOW(__Constant_3b9aca00_0)
+        LDI     R27, (__Constant_3b9aca00_0) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_5f5e100_0)
+        LDI     R27, (__Constant_5f5e100_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     (??str_b + 1), R16
+//   94     str_b[0] = ((Value%10000000000)/1000000000)+'0';
+        LDI     R26, LOW(__Constant_540be400_2)
+        LDI     R27, (__Constant_540be400_2) >> 8
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?ULL_MOD_L12
+        CALL    ?ULL_MOD_L12
+        MOVW    R1:R0, R17:R16
+        MOVW    R3:R2, R19:R18
+        MOVW    R5:R4, R21:R20
+        MOVW    R7:R6, R23:R22
+        LDI     R26, LOW(__Constant_3b9aca00_0)
+        LDI     R27, (__Constant_3b9aca00_0) >> 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        SUBI    R16, 208
+        STS     ??str_b, R16
+//   95     
+//   96     int last=0;
+        LDI     R18, 0
+        LDI     R19, 0
+//   97     for(int index=(sizeof(str_b)-1); index>=0; index--)
+        LDI     R24, 10
+        LDI     R25, 0
+??DEFINE_itoa_2:
+        TST     R25
+        BRMI    ??DEFINE_itoa_3
+//   98     {
+//   99         if(str_b[index] != '0')
+        MOVW    R31:R30, R25:R24
+        SUBI    R30, LOW((-(??str_b) & 0xFFFF))
+        SBCI    R31, (-(??str_b) & 0xFFFF) >> 8
+        LD      R16, Z
+        CPI     R16, 48
+        BREQ    ??DEFINE_itoa_4
+//  100         {
+//  101             last = index;
+        MOVW    R19:R18, R25:R24
+//  102         }
+//  103     }
+??DEFINE_itoa_4:
+        SBIW    R25:R24, 1
+        RJMP    ??DEFINE_itoa_2
+//  104     
+//  105     *Length = 10 - last;
+??DEFINE_itoa_3:
+        LDI     R16, 10
+        MOV     R17, R18
+        SUB     R16, R17
+        LDD     R30, Y+16
+        LDD     R31, Y+17
+        ST      Z, R16
+//  106     return &str_b[last];
+        LDI     R16, LOW(??str_b)
+        LDI     R17, (??str_b) >> 8
+        ADD     R16, R18
+        ADC     R17, R19
+??DEFINE_itoa_1:
+        LDI     R30, 18
+        JMP     ?EPILOGUE_B16_L09
+//  107 }
+          CFI EndBlock cfiBlock3
+
+        RSEG NEAR_Z:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_Z>`
+??str_b:
+        DS8 11
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01cH
+__?EECR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01dH
+__?EEDR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01eH
+__?EEARL:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01fH
+__?EEARH:
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for <Constant "0">>`:
+        DC8 "0"
+
+        RSEG INITTAB:CODE:NOROOT(0)
+        DATA
+`?<Segment init: NEAR_I>`:
+        DC16    SFE(NEAR_I) - SFB(NEAR_I)
+        DC16    SFB(NEAR_I)
+        DC16    SFB(NEAR_ID)
+        REQUIRE ?need_segment_init
+
+        RSEG INITTAB:CODE:NOROOT(0)
+        DATA
+`?<Segment init: NEAR_Z>`:
+        DC16    SFE(NEAR_Z) - SFB(NEAR_Z)
+        DC16    SFB(NEAR_Z)
+        DC16    0
+        REQUIRE ?need_segment_init
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_0`:
+        DD 0, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_1`:
+        DD 10, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_2`:
+        DD 100, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_3`:
+        DD 1000, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_4`:
+        DD 10000, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_5`:
+        DD 100000, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_6`:
+        DD 1000000, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_7`:
+        DD 10000000, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_8`:
+        DD 100000000, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_9`:
+        DD 1000000000, 0
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_10`:
+        DD 1410065408, 2
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+`?<Constant "0">`:
+        DS8 2
+        REQUIRE `?<Initializer for <Constant "0">>`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_0_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_0`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_a_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_1`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_64_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_2`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_3e8_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_3`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_2710_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_4`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_186a0_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_5`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_f4240_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_6`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_989680_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_7`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_5f5e100_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_8`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_3b9aca00_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_9`
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_540be400_2:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_10`
+
+        END
+//  108 /************************************************** Tasks *************************************************************/
+//  109 /*
+//  110     Nothing
+//  111 */
+//  112 /************************************************** Vectors ***********************************************************/
+//  113 /*
+//  114     Nothing
+//  115 */
+//  116 /**********************************************************************************************************************/
+//  117 
+// 
+// 608 bytes in segment CODE
+//  12 bytes in segment INITTAB
+//  90 bytes in segment NEAR_I
+//  90 bytes in segment NEAR_ID
+//  11 bytes in segment NEAR_Z
+// 
+// 610 bytes of CODE memory (+ 100 bytes shared)
+//  13 bytes of DATA memory (+  88 bytes shared)
+//
+//Errors: none
+//Warnings: none

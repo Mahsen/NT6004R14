@@ -1,0 +1,226 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// IAR C/C++ Compiler V7.30.3.1659 for Microchip AVR      13/Sep/2024  17:30:02
+// Copyright 1996-2020 IAR Systems AB.
+//
+//    Source file  =  
+//        D:\Project\NewStructure\NT6004R14\Application\Module\Display.cpp
+//    Command line =  
+//        -f C:\Users\Mohammad\AppData\Local\Temp\EWB4F8.tmp
+//        (D:\Project\NewStructure\NT6004R14\Application\Module\Display.cpp
+//        --cpu=m32 -ms -o
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\Obj -D NDEBUG
+//        -lC D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List -lA
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List
+//        --initializers_in_flash --no_cse --no_inline --no_code_motion
+//        --no_cross_call --no_clustering --no_tbaa --debug
+//        -DENABLE_BIT_DEFINITIONS -e -I
+//        D:\Project\NewStructure\NT6004R14\Application\Application\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Core\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Driver\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Config\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Module\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Class\\ --eeprom_size
+//        1024 --dlib --dlib_config "C:\Program Files (x86)\IAR
+//        Systems\Embedded Workbench 8.4\avr\LIB\DLIB\dlAVR-3s-ec_mul-sf-n.h"
+//        --ec++ -On)
+//    Locale       =  English_USA.1252
+//    List file    =  
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List\Display.s90
+//
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME Display
+
+        RTMODEL "__64bit_doubles", "disabled"
+        RTMODEL "__SystemLibrary", "DLib"
+        RTMODEL "__cpu", "3"
+        RTMODEL "__cpu_name", "ATmega32"
+        RTMODEL "__dlib_file_descriptor", "0"
+        RTMODEL "__enhanced_core", "enabled"
+        RTMODEL "__has_elpm", "false"
+        RTMODEL "__memory_model", "2"
+        RTMODEL "__rt_version", "3"
+        RTMODEL "__vtable_memory", "__nearflash"
+
+        RSEG CSTACK:DATA:NOROOT(0)
+        RSEG RSTACK:DATA:NOROOT(0)
+
+        ERROR
+//NOTE: This module defines or uses C++ features that are not
+//      accessible from assembler code. Assembling this file will
+//      not produce an equivalent object file to the one produced
+//      by the C++ compiler.
+
+        EXTERN ?need_segment_init
+
+        PUBWEAK `?<Segment init: NEAR_Z>`
+        PUBLIC ??Icon
+        PUBLIC ??Instance
+        PUBWEAK __?EEARH
+        PUBWEAK __?EEARL
+        PUBWEAK __?EECR
+        PUBWEAK __?EEDR
+        
+          CFI Names cfiNames0
+          CFI StackFrame CFA_Y Y DATA
+          CFI StackFrame CFA_SP SP DATA
+          CFI VirtualResource ?RetPad:1, ?RetHigh:8, ?RetLow:8, ?Ret:17
+          CFI Resource R0:8, R1:8, R2:8, R3:8, R4:8, R5:8, R6:8, R7:8, R8:8, R9:8
+          CFI Resource R10:8, R11:8, R12:8, R13:8, R14:8, R15:8, R16:8, R17:8
+          CFI Resource R18:8, R19:8, R20:8, R21:8, R22:8, R23:8, R24:8, R25:8
+          CFI Resource R26:8, R27:8, R28:8, R29:8, R30:8, R31:8
+          CFI Resource ?RetHighByteMask:8, SP:16, SPH:8, SPL:8, Y:16
+          CFI ResourceParts ?Ret ?RetHigh, ?RetLow, ?RetPad
+          CFI ResourceParts SP SPH, SPL
+          CFI ResourceParts Y R29, R28
+          CFI EndNames cfiNames0
+        
+          CFI Common cfiCommon0 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign 1
+          CFI ReturnAddress ?Ret CODE
+          CFI CFA_Y Y+0
+          CFI CFA_SP SP+2
+          CFI ?RetPad 0
+          CFI ?RetHigh and(load(1, DATA, sub(CFA_SP, 1)), ?RetHighByteMask)
+          CFI ?RetLow Frame(CFA_SP, 0)
+          CFI ?Ret Concat
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 SameValue
+          CFI R13 SameValue
+          CFI R14 SameValue
+          CFI R15 SameValue
+          CFI R16 Undefined
+          CFI R17 Undefined
+          CFI R18 Undefined
+          CFI R19 Undefined
+          CFI R20 Undefined
+          CFI R21 Undefined
+          CFI R22 Undefined
+          CFI R23 Undefined
+          CFI R24 SameValue
+          CFI R25 SameValue
+          CFI R26 SameValue
+          CFI R27 SameValue
+          CFI R28 Undefined
+          CFI R29 Undefined
+          CFI R30 Undefined
+          CFI R31 Undefined
+          CFI ?RetHighByteMask SameValue
+          CFI SPH Undefined
+          CFI SPL Undefined
+          CFI EndCommon cfiCommon0
+        
+`?<Name Display 0>` SYMBOL "Display"
+??Instance          SYMBOL "Instance", `?<Name Display 0>`
+
+// D:\Project\NewStructure\NT6004R14\Application\Module\Display.cpp
+//    1 /************************************************** Description *******************************************************/
+//    2 /*
+//    3     File : display.cpp
+//    4     Programmer : Mohammad Lotfi
+//    5     Used : Manage display
+//    6     Design Pattern : singleton
+//    7     Types of memory : Nothing
+//    8     Total Tread : Nothing
+//    9     Site : https://www.mahsen.ir
+//   10     Tel : +989124662703
+//   11     Email : info@mahsen.ir
+//   12     Last Update : 2023/6/10
+//   13 */
+//   14 /************************************************** Warnings **********************************************************/
+//   15 /*
+//   16     Nothing
+//   17 */
+//   18 /************************************************** Wizards ***********************************************************/
+//   19 /*
+//   20     Nothing
+//   21 */
+//   22 /************************************************** Includes **********************************************************/
+//   23 #include "display.hpp"
+//   24 /************************************************** Defineds **********************************************************/
+//   25 /*
+//   26     Nothing
+//   27 */
+//   28 /************************************************** Names *************************************************************/
+//   29 /*
+//   30     Nothing
+//   31 */
+//   32 /************************************************** Variables *********************************************************/
+
+        RSEG NEAR_Z:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_Z>`
+//   33 Display* Display::Instance = NULL;
+??Instance:
+        DS8 2
+//   34 /************************************************** Opjects ***********************************************************/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//   35 void Display::Icon(U16 Icons, bool Show) {
+??Icon:
+          CFI Block cfiBlock0 Using cfiCommon0
+          CFI Function ??Icon
+          CFI NoCalls
+        CODE
+//   36   
+//   37 }
+        RET
+          CFI EndBlock cfiBlock0
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01cH
+__?EECR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01dH
+__?EEDR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01eH
+__?EEARL:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01fH
+__?EEARH:
+
+        RSEG INITTAB:CODE:NOROOT(0)
+        DATA
+`?<Segment init: NEAR_Z>`:
+        DC16    SFE(NEAR_Z) - SFB(NEAR_Z)
+        DC16    SFB(NEAR_Z)
+        DC16    0
+        REQUIRE ?need_segment_init
+
+        END
+//   38 /************************************************** Functions *********************************************************/
+//   39 /*
+//   40     Nothing
+//   41 */
+//   42 /************************************************** Tasks *************************************************************/
+//   43 /*
+//   44     Nothing
+//   45 */
+//   46 /************************************************** Vectors ***********************************************************/
+//   47 /*
+//   48     Nothing
+//   49 */
+//   50 /**********************************************************************************************************************/
+//   51 
+// 
+// 2 bytes in segment CODE
+// 6 bytes in segment INITTAB
+// 2 bytes in segment NEAR_Z
+// 
+// 2 bytes of CODE memory (+ 6 bytes shared)
+// 2 bytes of DATA memory
+//
+//Errors: none
+//Warnings: none

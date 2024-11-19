@@ -1,0 +1,1346 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// IAR C/C++ Compiler V7.30.3.1659 for Microchip AVR      13/Sep/2024  17:30:02
+// Copyright 1996-2020 IAR Systems AB.
+//
+//    Source file  =  
+//        D:\Project\NewStructure\NT6004R14\Application\Driver\timer.c
+//    Command line =  
+//        -f C:\Users\Mohammad\AppData\Local\Temp\EWB5C7.tmp
+//        (D:\Project\NewStructure\NT6004R14\Application\Driver\timer.c
+//        --cpu=m32 -ms -o
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\Obj -D NDEBUG
+//        -lC D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List -lA
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List
+//        --initializers_in_flash --no_cse --no_inline --no_code_motion
+//        --no_cross_call --no_clustering --no_tbaa --debug
+//        -DENABLE_BIT_DEFINITIONS -e -I
+//        D:\Project\NewStructure\NT6004R14\Application\Application\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Core\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Driver\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Config\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Module\\ -I
+//        D:\Project\NewStructure\NT6004R14\Application\Class\\ --eeprom_size
+//        1024 --dlib --dlib_config "C:\Program Files (x86)\IAR
+//        Systems\Embedded Workbench 8.4\avr\LIB\DLIB\dlAVR-3s-ec_mul-sf-n.h"
+//        --ec++ -On)
+//    Locale       =  English_USA.1252
+//    List file    =  
+//        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List\timer.s90
+//
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME timer
+
+        RTMODEL "__64bit_doubles", "disabled"
+        RTMODEL "__SystemLibrary", "DLib"
+        RTMODEL "__cpu", "3"
+        RTMODEL "__cpu_name", "ATmega32"
+        RTMODEL "__dlib_file_descriptor", "0"
+        RTMODEL "__enhanced_core", "enabled"
+        RTMODEL "__has_elpm", "false"
+        RTMODEL "__memory_model", "2"
+        RTMODEL "__rt_version", "3"
+        RTMODEL "__vtable_memory", "__nearflash"
+
+        RSEG CSTACK:DATA:NOROOT(0)
+        RSEG RSTACK:DATA:NOROOT(0)
+
+        ERROR
+//NOTE: This module defines or uses C++ features that are not
+//      accessible from assembler code. Assembling this file will
+//      not produce an equivalent object file to the one produced
+//      by the C++ compiler.
+
+        EXTERN ?EPILOGUE_B16_L09
+        EXTERN ?LL_CMP_L12
+        EXTERN ?LL_CMP_R8_L12
+        EXTERN ?LL_MUL_L12
+        EXTERN ?PROLOGUE16_L09
+        EXTERN ?Register_R10_is_cg_reg
+        EXTERN ?Register_R11_is_cg_reg
+        EXTERN ?Register_R12_is_cg_reg
+        EXTERN ?Register_R13_is_cg_reg
+        EXTERN ?Register_R14_is_cg_reg
+        EXTERN ?Register_R15_is_cg_reg
+        EXTERN ?Register_R4_is_cg_reg
+        EXTERN ?Register_R5_is_cg_reg
+        EXTERN ?Register_R6_is_cg_reg
+        EXTERN ?Register_R7_is_cg_reg
+        EXTERN ?Register_R8_is_cg_reg
+        EXTERN ?Register_R9_is_cg_reg
+        EXTERN ?S_EC_MUL_L02
+        EXTERN ?ULL_DIV_L12
+        EXTERN ?need_segment_init
+
+        PUBWEAK `?<Segment init: NEAR_I>`
+        PUBWEAK `?<Segment init: NEAR_Z>`
+        PUBLIC ??TIMER1_COMPA_ISR
+        PUBWEAK `??TIMER1_COMPA_ISR::??INTVEC 28`
+        PUBLIC CalculateCompareValue
+        PUBLIC TIMER_Add
+        PUBLIC TIMER_GetCount
+        PUBLIC TIMER_SetCount
+        PUBLIC TIMER_SetEnable
+        PUBLIC Timer
+        PUBWEAK _A_OCR1A
+        PUBWEAK _A_TCCR1B
+        PUBWEAK _A_TIMSK
+        PUBWEAK __?EEARH
+        PUBWEAK __?EEARL
+        PUBWEAK __?EECR
+        PUBWEAK __?EEDR
+        PUBWEAK __Constant_0_0
+        PUBWEAK __Constant_ffffffff_ffffffff
+        PUBLIC __init_Timer
+        
+          CFI Names cfiNames0
+          CFI StackFrame CFA_Y Y DATA
+          CFI StackFrame CFA_SP SP DATA
+          CFI VirtualResource ?RetPad:1, ?RetHigh:8, ?RetLow:8, ?Ret:17
+          CFI Resource R0:8, R1:8, R2:8, R3:8, R4:8, R5:8, R6:8, R7:8, R8:8, R9:8
+          CFI Resource R10:8, R11:8, R12:8, R13:8, R14:8, R15:8, R16:8, R17:8
+          CFI Resource R18:8, R19:8, R20:8, R21:8, R22:8, R23:8, R24:8, R25:8
+          CFI Resource R26:8, R27:8, R28:8, R29:8, R30:8, R31:8
+          CFI Resource ?RetHighByteMask:8, SP:16, SPH:8, SPL:8, Y:16
+          CFI ResourceParts ?Ret ?RetHigh, ?RetLow, ?RetPad
+          CFI ResourceParts SP SPH, SPL
+          CFI ResourceParts Y R29, R28
+          CFI EndNames cfiNames0
+        
+          CFI Common cfiCommon0 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign 1
+          CFI ReturnAddress ?Ret CODE
+          CFI CFA_Y Y+0
+          CFI CFA_SP SP+2
+          CFI ?RetPad 0
+          CFI ?RetHigh and(load(1, DATA, sub(CFA_SP, 1)), ?RetHighByteMask)
+          CFI ?RetLow Frame(CFA_SP, 0)
+          CFI ?Ret Concat
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 SameValue
+          CFI R13 SameValue
+          CFI R14 SameValue
+          CFI R15 SameValue
+          CFI R16 Undefined
+          CFI R17 Undefined
+          CFI R18 Undefined
+          CFI R19 Undefined
+          CFI R20 Undefined
+          CFI R21 Undefined
+          CFI R22 Undefined
+          CFI R23 Undefined
+          CFI R24 SameValue
+          CFI R25 SameValue
+          CFI R26 SameValue
+          CFI R27 SameValue
+          CFI R28 Undefined
+          CFI R29 Undefined
+          CFI R30 Undefined
+          CFI R31 Undefined
+          CFI ?RetHighByteMask SameValue
+          CFI SPH Undefined
+          CFI SPL Undefined
+          CFI EndCommon cfiCommon0
+        
+        
+          CFI Common cfiCommon1 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign 1
+          CFI ReturnAddress ?Ret CODE
+          CFI CFA_Y Y+2
+          CFI CFA_SP SP+2
+          CFI ?RetPad 0
+          CFI ?RetHigh and(load(1, DATA, sub(CFA_SP, 1)), ?RetHighByteMask)
+          CFI ?RetLow Frame(CFA_SP, 0)
+          CFI ?Ret Concat
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 SameValue
+          CFI R13 SameValue
+          CFI R14 SameValue
+          CFI R15 SameValue
+          CFI R16 Undefined
+          CFI R17 Undefined
+          CFI R18 Undefined
+          CFI R19 Undefined
+          CFI R20 Undefined
+          CFI R21 Undefined
+          CFI R22 Undefined
+          CFI R23 Undefined
+          CFI R24 SameValue
+          CFI R25 SameValue
+          CFI R26 SameValue
+          CFI R27 SameValue
+          CFI R28 Undefined
+          CFI R29 Undefined
+          CFI R30 Undefined
+          CFI R31 Undefined
+          CFI ?RetHighByteMask SameValue
+          CFI SPH Undefined
+          CFI SPL Undefined
+          CFI EndCommon cfiCommon1
+        
+        
+          CFI Common cfiCommon2 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign 1
+          CFI ReturnAddress ?Ret CODE
+          CFI CFA_Y Y+8
+          CFI CFA_SP SP+2
+          CFI ?RetPad 0
+          CFI ?RetHigh and(load(1, DATA, sub(CFA_SP, 1)), ?RetHighByteMask)
+          CFI ?RetLow Frame(CFA_SP, 0)
+          CFI ?Ret Concat
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 SameValue
+          CFI R13 SameValue
+          CFI R14 SameValue
+          CFI R15 SameValue
+          CFI R16 Undefined
+          CFI R17 Undefined
+          CFI R18 Undefined
+          CFI R19 Undefined
+          CFI R20 Undefined
+          CFI R21 Undefined
+          CFI R22 Undefined
+          CFI R23 Undefined
+          CFI R24 SameValue
+          CFI R25 SameValue
+          CFI R26 SameValue
+          CFI R27 SameValue
+          CFI R28 Undefined
+          CFI R29 Undefined
+          CFI R30 Undefined
+          CFI R31 Undefined
+          CFI ?RetHighByteMask SameValue
+          CFI SPH Undefined
+          CFI SPL Undefined
+          CFI EndCommon cfiCommon2
+        
+        
+          CFI Common cfiCommon3 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign 1
+          CFI ReturnAddress ?Ret CODE
+          CFI CFA_Y Y+0
+          CFI CFA_SP SP+2
+          CFI ?RetPad 0
+          CFI ?RetHigh and(load(1, DATA, sub(CFA_SP, 1)), ?RetHighByteMask)
+          CFI ?RetLow Frame(CFA_SP, 0)
+          CFI ?Ret Concat
+          CFI R0 SameValue
+          CFI R1 SameValue
+          CFI R2 SameValue
+          CFI R3 SameValue
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 SameValue
+          CFI R13 SameValue
+          CFI R14 SameValue
+          CFI R15 SameValue
+          CFI R16 SameValue
+          CFI R17 SameValue
+          CFI R18 SameValue
+          CFI R19 SameValue
+          CFI R20 SameValue
+          CFI R21 SameValue
+          CFI R22 SameValue
+          CFI R23 SameValue
+          CFI R24 SameValue
+          CFI R25 SameValue
+          CFI R26 SameValue
+          CFI R27 SameValue
+          CFI R28 Undefined
+          CFI R29 Undefined
+          CFI R30 SameValue
+          CFI R31 SameValue
+          CFI ?RetHighByteMask SameValue
+          CFI SPH Undefined
+          CFI SPL Undefined
+          CFI EndCommon cfiCommon3
+        
+
+`??TIMER1_COMPA_ISR::??INTVEC 28` SYMBOL "??INTVEC 28", ??TIMER1_COMPA_ISR
+
+// D:\Project\NewStructure\NT6004R14\Application\Driver\timer.c
+//    1 /************************************************** Description *******************************************************/
+//    2 /*
+//    3     File : timer.c
+//    4     Programmer : Mohammad Lotfi
+//    5     Used : timer
+//    6     Design Pattern : Nothing
+//    7     Types of memory : Nothing
+//    8     Total Tread : Nothing
+//    9     Site : https://www.mahsen.ir
+//   10     Tel : +989124662703
+//   11     Email : info@mahsen.ir
+//   12     Last Update : 2023/6/10
+//   13 */
+//   14 /************************************************** Warnings **********************************************************/
+//   15 /*
+//   16     Nothing
+//   17 */
+//   18 /************************************************** Wizards ***********************************************************/
+//   19 /*
+//   20     Nothing
+//   21 */
+//   22 /************************************************** Includes **********************************************************/
+//   23 #include "timer.h"
+
+        ASEGN ABSOLUTE:DATA:NOROOT,059H
+// union <unnamed> volatile __io _A_TIMSK
+_A_TIMSK:
+        DS8 1
+
+        ASEGN ABSOLUTE:DATA:NOROOT,04eH
+// union <unnamed> volatile __io _A_TCCR1B
+_A_TCCR1B:
+        DS8 1
+
+        ASEGN ABSOLUTE:DATA:NOROOT,04aH
+// union <unnamed> volatile __io _A_OCR1A
+_A_OCR1A:
+        DS8 2
+//   24 /************************************************** Defineds **********************************************************/
+//   25 /*
+//   26     Nothing
+//   27 */
+//   28 /************************************************** Names *************************************************************/
+//   29 /*
+//   30     Nothing
+//   31 */
+//   32 /************************************************** Variables *********************************************************/
+//   33 struct struct_TIMER
+//   34 {
+//   35 
+//   36   U8 Added;
+//   37 
+//   38   struct struct_Channel
+//   39   {
+//   40     BIT Enable;
+//   41     U64 Count;	
+//   42     U64 Period;
+//   43     void (*Event)(void);
+//   44   } Channel[TIMER_MAXCHANNELTIMER];
+//   45   	
+
+        RSEG NEAR_Z:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_Z>`
+//   46 } Timer;
+Timer:
+        DS8 153
+
+        RSEG `CODE`:CODE:NOROOT(1)
+CalculateCompareValue:
+          CFI Block cfiBlock0 Using cfiCommon0
+          CFI Function CalculateCompareValue
+        CODE
+        CALL    ?PROLOGUE16_L09
+          CFI R15 Frame(CFA_Y, -1)
+          CFI R14 Frame(CFA_Y, -2)
+          CFI R13 Frame(CFA_Y, -3)
+          CFI R12 Frame(CFA_Y, -4)
+          CFI R11 Frame(CFA_Y, -5)
+          CFI R10 Frame(CFA_Y, -6)
+          CFI R9 Frame(CFA_Y, -7)
+          CFI R8 Frame(CFA_Y, -8)
+          CFI R7 Frame(CFA_Y, -9)
+          CFI R6 Frame(CFA_Y, -10)
+          CFI R5 Frame(CFA_Y, -11)
+          CFI R4 Frame(CFA_Y, -12)
+          CFI R27 Frame(CFA_Y, -13)
+          CFI R26 Frame(CFA_Y, -14)
+          CFI R25 Frame(CFA_Y, -15)
+          CFI R24 Frame(CFA_Y, -16)
+          CFI CFA_Y Y+16
+        REQUIRE ?Register_R4_is_cg_reg
+        REQUIRE ?Register_R5_is_cg_reg
+        REQUIRE ?Register_R6_is_cg_reg
+        REQUIRE ?Register_R7_is_cg_reg
+        REQUIRE ?Register_R8_is_cg_reg
+        REQUIRE ?Register_R9_is_cg_reg
+        REQUIRE ?Register_R10_is_cg_reg
+        REQUIRE ?Register_R11_is_cg_reg
+        REQUIRE ?Register_R12_is_cg_reg
+        REQUIRE ?Register_R13_is_cg_reg
+        REQUIRE ?Register_R14_is_cg_reg
+        REQUIRE ?Register_R15_is_cg_reg
+        SBIW    R29:R28, 24
+          CFI CFA_Y Y+40
+        STD     Y+16, R16
+        STD     Y+17, R17
+        STD     Y+18, R18
+        STD     Y+19, R19
+        STD     Y+20, R20
+        STD     Y+21, R21
+        STD     Y+22, R22
+        STD     Y+23, R23
+        LDI     R16, 0
+        LDI     R17, 27
+        LDI     R18, 183
+        LDI     R19, 0
+        LDI     R20, 0
+        LDI     R21, 0
+        LDI     R22, 0
+        LDI     R23, 0
+        ST      Y, R16
+        STD     Y+1, R17
+        STD     Y+2, R18
+        STD     Y+3, R19
+        STD     Y+4, R20
+        STD     Y+5, R21
+        STD     Y+6, R22
+        STD     Y+7, R23
+        LDI     R16, 64
+        MOV     R8, R16
+        CLR     R9
+        CLR     R10
+        CLR     R11
+        CLR     R12
+        CLR     R13
+        CLR     R14
+        CLR     R15
+        MOVW    R27:R26, R29:R28
+        ADIW    R27:R26, 16
+        MOVW    R17:R16, R9:R8
+        MOVW    R19:R18, R11:R10
+        MOVW    R21:R20, R13:R12
+        MOVW    R23:R22, R15:R14
+          CFI FunCall ?LL_MUL_L12
+        CALL    ?LL_MUL_L12
+        STD     Y+8, R16
+        STD     Y+9, R17
+        STD     Y+10, R18
+        STD     Y+11, R19
+        STD     Y+12, R20
+        STD     Y+13, R21
+        STD     Y+14, R22
+        STD     Y+15, R23
+        LD      R0, Y
+        LDD     R1, Y+1
+        LDD     R2, Y+2
+        LDD     R3, Y+3
+        LDD     R4, Y+4
+        LDD     R5, Y+5
+        LDD     R6, Y+6
+        LDD     R7, Y+7
+        MOVW    R27:R26, R29:R28
+        ADIW    R27:R26, 8
+        MOVW    R17:R16, R1:R0
+        MOVW    R19:R18, R3:R2
+        MOVW    R21:R20, R5:R4
+        MOVW    R23:R22, R7:R6
+          CFI FunCall ?ULL_DIV_L12
+        CALL    ?ULL_DIV_L12
+        ADIW    R29:R28, 24
+          CFI CFA_Y Y+16
+        LDI     R30, 16
+        JMP     ?EPILOGUE_B16_L09
+          CFI EndBlock cfiBlock0
+//   47 /************************************************** Opjects ***********************************************************/
+//   48 /*
+//   49     Nothing
+//   50 */
+//   51 /************************************************** Functions *********************************************************/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//   52 void __init_Timer(void)
+__init_Timer:
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function __init_Timer
+        CODE
+//   53 {
+//   54     // Set Timer1 in CTC mode
+//   55     TCCR1B |= (1 << WGM12);
+        IN      R16, 0x2E
+        ORI     R16, 0x08
+        OUT     0x2E, R16
+//   56     
+//   57     // Set prescaler to divide by 64
+//   58     TCCR1B |= (1 << CS11) | (1 << CS10);
+        IN      R16, 0x2E
+        ORI     R16, 0x03
+        OUT     0x2E, R16
+//   59     
+//   60     // Set initial compare value for 1 ms interrupt
+//   61     OCR1A = CalculateCompareValue(1000); //18749;
+        LDI     R16, 232
+        LDI     R17, 3
+        LDI     R18, 0
+        LDI     R19, 0
+        LDI     R20, 0
+        LDI     R21, 0
+        LDI     R22, 0
+        LDI     R23, 0
+          CFI FunCall CalculateCompareValue
+        RCALL   CalculateCompareValue
+        OUT     0x2B, R17
+        OUT     0x2A, R16
+//   62     
+//   63     // Enable compare interrupt
+//   64     TIMSK |= (1 << OCIE1A);
+        IN      R16, 0x39
+        ORI     R16, 0x10
+        OUT     0x39, R16
+//   65     
+//   66     // Enable global interrupts
+//   67     __enable_interrupt();
+        SEI
+//   68 }
+        RET
+          CFI EndBlock cfiBlock1
+        REQUIRE _A_TCCR1B
+        REQUIRE _A_OCR1A
+        REQUIRE _A_TIMSK
+//   69 /*--------------------------------------------------------------------------------------------------------------------*/
+//   70 U32 CalculateCompareValue(U64 frequency)
+//   71 {
+//   72     U64 clockFrequency = F_CPU;
+//   73     U64 prescaler = 64UL;
+//   74     U64 compareValue = (clockFrequency / (prescaler * frequency));
+//   75     
+//   76     return (U32)compareValue;
+//   77 }
+//   78 /*--------------------------------------------------------------------------------------------------------------------*/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//   79 U8  TIMER_Add(U64 Period_ms, void (*Event) (void))
+TIMER_Add:
+          CFI Block cfiBlock2 Using cfiCommon1
+          CFI Function TIMER_Add
+        CODE
+//   80 {
+        CALL    ?PROLOGUE16_L09
+          CFI R15 Frame(CFA_Y, -3)
+          CFI R14 Frame(CFA_Y, -4)
+          CFI R13 Frame(CFA_Y, -5)
+          CFI R12 Frame(CFA_Y, -6)
+          CFI R11 Frame(CFA_Y, -7)
+          CFI R10 Frame(CFA_Y, -8)
+          CFI R9 Frame(CFA_Y, -9)
+          CFI R8 Frame(CFA_Y, -10)
+          CFI R7 Frame(CFA_Y, -11)
+          CFI R6 Frame(CFA_Y, -12)
+          CFI R5 Frame(CFA_Y, -13)
+          CFI R4 Frame(CFA_Y, -14)
+          CFI R27 Frame(CFA_Y, -15)
+          CFI R26 Frame(CFA_Y, -16)
+          CFI R25 Frame(CFA_Y, -17)
+          CFI R24 Frame(CFA_Y, -18)
+          CFI CFA_Y Y+18
+        REQUIRE ?Register_R8_is_cg_reg
+        REQUIRE ?Register_R9_is_cg_reg
+        REQUIRE ?Register_R10_is_cg_reg
+        REQUIRE ?Register_R11_is_cg_reg
+        REQUIRE ?Register_R12_is_cg_reg
+        REQUIRE ?Register_R13_is_cg_reg
+        REQUIRE ?Register_R14_is_cg_reg
+        REQUIRE ?Register_R15_is_cg_reg
+        MOVW    R9:R8, R17:R16
+        MOVW    R11:R10, R19:R18
+        MOVW    R13:R12, R21:R20
+        MOVW    R15:R14, R23:R22
+        LDD     R18, Y+16
+        LDD     R19, Y+17
+//   81   /// Check max Channel Timer
+//   82   if(Timer.Added<TIMER_MAXCHANNELTIMER)
+        LDS     R16, Timer
+        CPI     R16, 8
+        BRCS    $+2+2
+        RJMP    ??TIMER_Add_0
+//   83   {		
+//   84     __disable_interrupt();
+        CLI
+//   85     Timer.Channel[Timer.Added].Count = RESET;
+        LDS     R16, Timer
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDI     R16, 0
+        STD     Z+2, R16
+        LDI     R16, 0
+        STD     Z+3, R16
+        LDI     R16, 0
+        STD     Z+4, R16
+        LDI     R16, 0
+        STD     Z+5, R16
+        LDI     R16, 0
+        STD     Z+6, R16
+        LDI     R16, 0
+        STD     Z+7, R16
+        LDI     R16, 0
+        STD     Z+8, R16
+        LDI     R16, 0
+        STD     Z+9, R16
+//   86     Timer.Channel[Timer.Added].Period = Period_ms;
+        LDS     R16, Timer
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        STD     Z+10, R8
+        STD     Z+11, R9
+        STD     Z+12, R10
+        STD     Z+13, R11
+        STD     Z+14, R12
+        STD     Z+15, R13
+        STD     Z+16, R14
+        STD     Z+17, R15
+//   87     Timer.Channel[Timer.Added].Event = Event;
+        LDS     R16, Timer
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        STD     Z+18, R18
+        STD     Z+19, R19
+//   88     
+//   89     Timer.Channel[Timer.Added].Enable = ENABLE;
+        LDS     R16, Timer
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDI     R16, 1
+        STD     Z+1, R16
+//   90     Timer.Added++;
+        LDS     R16, Timer
+        INC     R16
+        STS     Timer, R16
+//   91   }
+//   92   else
+//   93   {
+//   94     __enable_interrupt();
+//   95     return TIMER_CHANNELOUTOFRANGE;
+//   96   }
+//   97 
+//   98   __enable_interrupt();
+        SEI
+//   99   return (Timer.Added-1);
+        LDS     R16, Timer
+        DEC     R16
+        RJMP    ??TIMER_Add_1
+??TIMER_Add_0:
+        SEI
+        LDI     R16, 255
+??TIMER_Add_1:
+        LDI     R30, 18
+        JMP     ?EPILOGUE_B16_L09
+//  100 }
+          CFI EndBlock cfiBlock2
+//  101 /*--------------------------------------------------------------------------------------------------------------------*/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//  102 void  TIMER_SetEnable(U8 Channel, BIT Value)
+TIMER_SetEnable:
+          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Function TIMER_SetEnable
+        CODE
+//  103 {
+        MOV     R18, R16
+        MOV     R19, R17
+//  104   if(Channel<Timer.Added)
+        LDS     R16, Timer
+        CP      R18, R16
+        BRCC    ??TIMER_SetEnable_0
+//  105   {
+//  106     Timer.Channel[Channel].Enable = Value;						
+        MOV     R16, R18
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        STD     Z+1, R19
+//  107   }
+//  108 }
+??TIMER_SetEnable_0:
+        RET
+          CFI EndBlock cfiBlock3
+//  109 /*--------------------------------------------------------------------------------------------------------------------*/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//  110 void  TIMER_SetCount(U8 Channel, U64 Count)
+TIMER_SetCount:
+          CFI Block cfiBlock4 Using cfiCommon2
+          CFI Function TIMER_SetCount
+        CODE
+//  111 {
+        CALL    ?PROLOGUE16_L09
+          CFI R15 Frame(CFA_Y, -9)
+          CFI R14 Frame(CFA_Y, -10)
+          CFI R13 Frame(CFA_Y, -11)
+          CFI R12 Frame(CFA_Y, -12)
+          CFI R11 Frame(CFA_Y, -13)
+          CFI R10 Frame(CFA_Y, -14)
+          CFI R9 Frame(CFA_Y, -15)
+          CFI R8 Frame(CFA_Y, -16)
+          CFI R7 Frame(CFA_Y, -17)
+          CFI R6 Frame(CFA_Y, -18)
+          CFI R5 Frame(CFA_Y, -19)
+          CFI R4 Frame(CFA_Y, -20)
+          CFI R27 Frame(CFA_Y, -21)
+          CFI R26 Frame(CFA_Y, -22)
+          CFI R25 Frame(CFA_Y, -23)
+          CFI R24 Frame(CFA_Y, -24)
+          CFI CFA_Y Y+24
+        REQUIRE ?Register_R8_is_cg_reg
+        REQUIRE ?Register_R9_is_cg_reg
+        REQUIRE ?Register_R10_is_cg_reg
+        REQUIRE ?Register_R11_is_cg_reg
+        REQUIRE ?Register_R12_is_cg_reg
+        REQUIRE ?Register_R13_is_cg_reg
+        REQUIRE ?Register_R14_is_cg_reg
+        REQUIRE ?Register_R15_is_cg_reg
+        MOV     R18, R16
+        LDD     R8, Y+16
+        LDD     R9, Y+17
+        LDD     R10, Y+18
+        LDD     R11, Y+19
+        LDD     R12, Y+20
+        LDD     R13, Y+21
+        LDD     R14, Y+22
+        LDD     R15, Y+23
+//  112   if(Channel<Timer.Added)
+        LDS     R16, Timer
+        CP      R18, R16
+        BRCC    ??TIMER_SetCount_0
+//  113   {
+//  114     if(Timer.Channel[Channel].Enable)
+        MOV     R16, R18
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+1
+        TST     R16
+        BREQ    ??TIMER_SetCount_0
+//  115     {
+//  116       Timer.Channel[Channel].Count = Count;
+        MOV     R16, R18
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        STD     Z+2, R8
+        STD     Z+3, R9
+        STD     Z+4, R10
+        STD     Z+5, R11
+        STD     Z+6, R12
+        STD     Z+7, R13
+        STD     Z+8, R14
+        STD     Z+9, R15
+//  117     }	
+//  118   }	
+//  119 }
+??TIMER_SetCount_0:
+        LDI     R30, 24
+        JMP     ?EPILOGUE_B16_L09
+          CFI EndBlock cfiBlock4
+//  120 /*--------------------------------------------------------------------------------------------------------------------*/
+
+        RSEG `CODE`:CODE:NOROOT(1)
+//  121 U64  TIMER_GetCount(U8 Channel)
+TIMER_GetCount:
+          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Function TIMER_GetCount
+        CODE
+//  122 {
+        MOV     R2, R16
+//  123   if(Channel<Timer.Added)
+        LDS     R16, Timer
+        CP      R2, R16
+        BRCC    ??TIMER_GetCount_0
+//  124   {
+//  125     if(Timer.Channel[Channel].Enable)
+        MOV     R16, R2
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+1
+        TST     R16
+        BREQ    ??TIMER_GetCount_0
+//  126     {
+//  127       return Timer.Channel[Channel].Count;				
+        MOV     R16, R2
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+2
+        LDD     R17, Z+3
+        LDD     R18, Z+4
+        LDD     R19, Z+5
+        LDD     R20, Z+6
+        LDD     R21, Z+7
+        LDD     R22, Z+8
+        LDD     R23, Z+9
+        RET
+//  128     }	
+//  129   }
+//  130 
+//  131   return RESET;
+??TIMER_GetCount_0:
+        LDI     R16, 0
+        LDI     R17, 0
+        LDI     R18, 0
+        LDI     R19, 0
+        LDI     R20, 0
+        LDI     R21, 0
+        LDI     R22, 0
+        LDI     R23, 0
+        RET
+//  132 }
+          CFI EndBlock cfiBlock5
+//  133 /************************************************** Tasks *************************************************************/
+//  134 /*
+//  135     Nothing
+//  136 */
+//  137 /************************************************** Vectors ***********************************************************/
+//  138 // IAR C interrupt  handler
+//  139 #pragma vector=TIMER1_COMPA_vect
+
+        RSEG `CODE`:CODE:NOROOT(1)
+        CALL_GRAPH_ROOT ??TIMER1_COMPA_ISR, "interrupt"
+//  140 __interrupt void TIMER1_COMPA_ISR(void)
+??TIMER1_COMPA_ISR:
+          CFI Block cfiBlock6 Using cfiCommon3
+          CFI Function ??TIMER1_COMPA_ISR
+        CODE
+//  141 {
+        ST      -Y, R15
+          CFI R15 Frame(CFA_Y, -1)
+          CFI CFA_Y Y+1
+        ST      -Y, R14
+          CFI R14 Frame(CFA_Y, -2)
+          CFI CFA_Y Y+2
+        ST      -Y, R13
+          CFI R13 Frame(CFA_Y, -3)
+          CFI CFA_Y Y+3
+        ST      -Y, R12
+          CFI R12 Frame(CFA_Y, -4)
+          CFI CFA_Y Y+4
+        ST      -Y, R11
+          CFI R11 Frame(CFA_Y, -5)
+          CFI CFA_Y Y+5
+        ST      -Y, R10
+          CFI R10 Frame(CFA_Y, -6)
+          CFI CFA_Y Y+6
+        ST      -Y, R9
+          CFI R9 Frame(CFA_Y, -7)
+          CFI CFA_Y Y+7
+        ST      -Y, R8
+          CFI R8 Frame(CFA_Y, -8)
+          CFI CFA_Y Y+8
+        ST      -Y, R26
+          CFI R26 Frame(CFA_Y, -9)
+          CFI CFA_Y Y+9
+        ST      -Y, R25
+          CFI R25 Frame(CFA_Y, -10)
+          CFI CFA_Y Y+10
+        ST      -Y, R24
+          CFI R24 Frame(CFA_Y, -11)
+          CFI CFA_Y Y+11
+        ST      -Y, R31
+          CFI R31 Frame(CFA_Y, -12)
+          CFI CFA_Y Y+12
+        ST      -Y, R30
+          CFI R30 Frame(CFA_Y, -13)
+          CFI CFA_Y Y+13
+        ST      -Y, R3
+          CFI R3 Frame(CFA_Y, -14)
+          CFI CFA_Y Y+14
+        ST      -Y, R2
+          CFI R2 Frame(CFA_Y, -15)
+          CFI CFA_Y Y+15
+        ST      -Y, R1
+          CFI R1 Frame(CFA_Y, -16)
+          CFI CFA_Y Y+16
+        ST      -Y, R0
+          CFI R0 Frame(CFA_Y, -17)
+          CFI CFA_Y Y+17
+        ST      -Y, R23
+          CFI R23 Frame(CFA_Y, -18)
+          CFI CFA_Y Y+18
+        ST      -Y, R22
+          CFI R22 Frame(CFA_Y, -19)
+          CFI CFA_Y Y+19
+        ST      -Y, R21
+          CFI R21 Frame(CFA_Y, -20)
+          CFI CFA_Y Y+20
+        ST      -Y, R20
+          CFI R20 Frame(CFA_Y, -21)
+          CFI CFA_Y Y+21
+        ST      -Y, R19
+          CFI R19 Frame(CFA_Y, -22)
+          CFI CFA_Y Y+22
+        ST      -Y, R18
+          CFI R18 Frame(CFA_Y, -23)
+          CFI CFA_Y Y+23
+        ST      -Y, R17
+          CFI R17 Frame(CFA_Y, -24)
+          CFI CFA_Y Y+24
+        ST      -Y, R16
+          CFI R16 Frame(CFA_Y, -25)
+          CFI CFA_Y Y+25
+        IN      R25, 0x3F
+        REQUIRE ?Register_R8_is_cg_reg
+        REQUIRE ?Register_R9_is_cg_reg
+        REQUIRE ?Register_R10_is_cg_reg
+        REQUIRE ?Register_R11_is_cg_reg
+        REQUIRE ?Register_R12_is_cg_reg
+        REQUIRE ?Register_R13_is_cg_reg
+        REQUIRE ?Register_R14_is_cg_reg
+        REQUIRE ?Register_R15_is_cg_reg
+//  142     for(U8 Index=RESET; Index<Timer.Added; Index++)
+        LDI     R26, 0
+??TIMER1_COMPA_ISR_1:
+        LDS     R16, Timer
+        CP      R26, R16
+        BRCS    $+2+2
+        RJMP    ??TIMER1_COMPA_ISR_2
+//  143     {
+//  144         if(Timer.Channel[Index].Enable)
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+1
+        TST     R16
+        BRNE    $+2+2
+        RJMP    ??TIMER1_COMPA_ISR_3
+//  145         {
+//  146             if(Timer.Channel[Index].Count < 0xFFFFFFFFFFFFFFFF)
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+2
+        LDD     R17, Z+3
+        LDD     R18, Z+4
+        LDD     R19, Z+5
+        LDD     R20, Z+6
+        LDD     R21, Z+7
+        LDD     R22, Z+8
+        LDD     R23, Z+9
+        LDI     R30, LOW(__Constant_ffffffff_ffffffff)
+        LDI     R31, (__Constant_ffffffff_ffffffff) >> 8
+          CFI FunCall ?LL_CMP_L12
+        CALL    ?LL_CMP_L12
+        BREQ    ??TIMER1_COMPA_ISR_4
+//  147             {
+//  148                 Timer.Channel[Index].Count++;
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+2
+        LDD     R17, Z+3
+        LDD     R18, Z+4
+        LDD     R19, Z+5
+        LDD     R20, Z+6
+        LDD     R21, Z+7
+        LDD     R22, Z+8
+        LDD     R23, Z+9
+        SUBI    R16, 255
+        SBCI    R17, 255
+        SBCI    R18, 255
+        SBCI    R19, 255
+        SBCI    R20, 255
+        SBCI    R21, 255
+        SBCI    R22, 255
+        SBCI    R23, 255
+        MOVW    R9:R8, R17:R16
+        MOVW    R11:R10, R19:R18
+        MOVW    R13:R12, R21:R20
+        MOVW    R15:R14, R23:R22
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        STD     Z+2, R8
+        STD     Z+3, R9
+        STD     Z+4, R10
+        STD     Z+5, R11
+        STD     Z+6, R12
+        STD     Z+7, R13
+        STD     Z+8, R14
+        STD     Z+9, R15
+//  149             }				
+//  150             if(Timer.Channel[Index].Period)
+??TIMER1_COMPA_ISR_4:
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+10
+        LDD     R17, Z+11
+        LDD     R18, Z+12
+        LDD     R19, Z+13
+        LDD     R20, Z+14
+        LDD     R21, Z+15
+        LDD     R22, Z+16
+        LDD     R23, Z+17
+        LDI     R30, LOW(__Constant_0_0)
+        LDI     R31, (__Constant_0_0) >> 8
+          CFI FunCall ?LL_CMP_L12
+        CALL    ?LL_CMP_L12
+        BRNE    $+2+2
+        RJMP    ??TIMER1_COMPA_ISR_3
+//  151             {
+//  152                 if(Timer.Channel[Index].Event)
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R18, Z+18
+        LDD     R19, Z+19
+        LDI     R16, LOW(0)
+        LDI     R17, (0) >> 8
+        CP      R18, R16
+        CPC     R19, R17
+        BRNE    $+2+2
+        RJMP    ??TIMER1_COMPA_ISR_3
+//  153                 {
+//  154                     if(Timer.Channel[Index].Count >= Timer.Channel[Index].Period)
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R8, Z+2
+        LDD     R9, Z+3
+        LDD     R10, Z+4
+        LDD     R11, Z+5
+        LDD     R12, Z+6
+        LDD     R13, Z+7
+        LDD     R14, Z+8
+        LDD     R15, Z+9
+        LDI     R30, LOW((Timer + 10))
+        LDI     R31, HIGH((Timer + 10))
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        ADD     R30, R16
+        ADC     R31, R17
+          CFI FunCall ?LL_CMP_R8_L12
+        CALL    ?LL_CMP_R8_L12
+        BRCS    ??TIMER1_COMPA_ISR_3
+//  155                     {
+//  156                         Timer.Channel[Index].Count = RESET;
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDI     R16, 0
+        STD     Z+2, R16
+        LDI     R16, 0
+        STD     Z+3, R16
+        LDI     R16, 0
+        STD     Z+4, R16
+        LDI     R16, 0
+        STD     Z+5, R16
+        LDI     R16, 0
+        STD     Z+6, R16
+        LDI     R16, 0
+        STD     Z+7, R16
+        LDI     R16, 0
+        STD     Z+8, R16
+        LDI     R16, 0
+        STD     Z+9, R16
+//  157                         (*Timer.Channel[Index].Event)();
+        MOV     R16, R26
+        LDI     R17, 0
+        LDI     R20, 19
+        LDI     R21, 0
+          CFI FunCall ?S_EC_MUL_L02
+        CALL    ?S_EC_MUL_L02
+        MOVW    R31:R30, R17:R16
+        SUBI    R30, LOW((-(Timer) & 0xFFFF))
+        SBCI    R31, (-(Timer) & 0xFFFF) >> 8
+        LDD     R16, Z+18
+        LDD     R17, Z+19
+        MOVW    R31:R30, R17:R16
+          CFI FunCall
+        ICALL
+//  158                     }
+//  159                 }
+//  160             }		
+//  161         }
+//  162     }
+??TIMER1_COMPA_ISR_3:
+        INC     R26
+        RJMP    ??TIMER1_COMPA_ISR_1
+//  163 }
+??TIMER1_COMPA_ISR_2:
+        OUT     0x3F, R25
+        LD      R16, Y+
+          CFI R16 SameValue
+          CFI CFA_Y Y+24
+        LD      R17, Y+
+          CFI R17 SameValue
+          CFI CFA_Y Y+23
+        LD      R18, Y+
+          CFI R18 SameValue
+          CFI CFA_Y Y+22
+        LD      R19, Y+
+          CFI R19 SameValue
+          CFI CFA_Y Y+21
+        LD      R20, Y+
+          CFI R20 SameValue
+          CFI CFA_Y Y+20
+        LD      R21, Y+
+          CFI R21 SameValue
+          CFI CFA_Y Y+19
+        LD      R22, Y+
+          CFI R22 SameValue
+          CFI CFA_Y Y+18
+        LD      R23, Y+
+          CFI R23 SameValue
+          CFI CFA_Y Y+17
+        LD      R0, Y+
+          CFI R0 SameValue
+          CFI CFA_Y Y+16
+        LD      R1, Y+
+          CFI R1 SameValue
+          CFI CFA_Y Y+15
+        LD      R2, Y+
+          CFI R2 SameValue
+          CFI CFA_Y Y+14
+        LD      R3, Y+
+          CFI R3 SameValue
+          CFI CFA_Y Y+13
+        LD      R30, Y+
+          CFI R30 SameValue
+          CFI CFA_Y Y+12
+        LD      R31, Y+
+          CFI R31 SameValue
+          CFI CFA_Y Y+11
+        LD      R24, Y+
+          CFI R24 SameValue
+          CFI CFA_Y Y+10
+        LD      R25, Y+
+          CFI R25 SameValue
+          CFI CFA_Y Y+9
+        LD      R26, Y+
+          CFI R26 SameValue
+          CFI CFA_Y Y+8
+        LD      R8, Y+
+          CFI R8 SameValue
+          CFI CFA_Y Y+7
+        LD      R9, Y+
+          CFI R9 SameValue
+          CFI CFA_Y Y+6
+        LD      R10, Y+
+          CFI R10 SameValue
+          CFI CFA_Y Y+5
+        LD      R11, Y+
+          CFI R11 SameValue
+          CFI CFA_Y Y+4
+        LD      R12, Y+
+          CFI R12 SameValue
+          CFI CFA_Y Y+3
+        LD      R13, Y+
+          CFI R13 SameValue
+          CFI CFA_Y Y+2
+        LD      R14, Y+
+          CFI R14 SameValue
+          CFI CFA_Y Y+1
+        LD      R15, Y+
+          CFI R15 SameValue
+          CFI CFA_Y Y+0
+        RETI
+          CFI EndBlock cfiBlock6
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01cH
+__?EECR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01dH
+__?EEDR:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01eH
+__?EEARL:
+
+        ASEGN ABSOLUTE:DATA:NOROOT,01fH
+__?EEARH:
+
+        COMMON INTVEC:CODE:ROOT(1)
+        ORG 28
+`??TIMER1_COMPA_ISR::??INTVEC 28`:
+        CODE
+        JMP     ??TIMER1_COMPA_ISR
+
+        RSEG INITTAB:CODE:NOROOT(0)
+        DATA
+`?<Segment init: NEAR_Z>`:
+        DC16    SFE(NEAR_Z) - SFB(NEAR_Z)
+        DC16    SFB(NEAR_Z)
+        DC16    0
+        REQUIRE ?need_segment_init
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_0`:
+        DD 4294967295, 4294967295
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_ffffffff_ffffffff:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_0`
+
+        RSEG INITTAB:CODE:NOROOT(0)
+        DATA
+`?<Segment init: NEAR_I>`:
+        DC16    SFE(NEAR_I) - SFB(NEAR_I)
+        DC16    SFB(NEAR_I)
+        DC16    SFB(NEAR_ID)
+        REQUIRE ?need_segment_init
+
+        RSEG NEAR_ID:CODE:NOROOT(0)
+        DATA
+`?<Initializer for 64 Bit Constant>_1`:
+        DD 0, 0
+
+        RSEG NEAR_I:DATA:NOROOT(0)
+        REQUIRE `?<Segment init: NEAR_I>`
+__Constant_0_0:
+        DS8 8
+        REQUIRE `?<Initializer for 64 Bit Constant>_1`
+
+        END
+//  164 /**********************************************************************************************************************/
+//  165 
+// 
+//     4 bytes in segment ABSOLUTE
+// 1 098 bytes in segment CODE
+//    12 bytes in segment INITTAB
+//     4 bytes in segment INTVEC
+//    16 bytes in segment NEAR_I
+//    16 bytes in segment NEAR_ID
+//   153 bytes in segment NEAR_Z
+// 
+// 1 098 bytes of CODE memory (+ 32 bytes shared)
+//   153 bytes of DATA memory (+ 20 bytes shared)
+//
+//Errors: none
+//Warnings: none

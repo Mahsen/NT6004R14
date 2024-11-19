@@ -11,7 +11,7 @@ extern "C" {
 #include <stdio.h>
 //----------------------------------------------------------
 #ifndef F_CPU
-#define F_CPU 12000000UL
+#define F_CPU 8000000UL
 #endif
   
 #define     C_UNIC              * 1
@@ -75,8 +75,9 @@ typedef void (*CallBack_Type)(void);
 //----------------------------------------------------------
 U8 DEFINE_Ascii2Hex(U8 Convert);
 U8* DEFINE_itoa(U64 Value, U8* Length);
-void DEFINE_Delay(U32 USecond);
-void DEFINE_Delay_ms(U32 MSecond);
+void DEFINE_Delay_ms(unsigned char millisecs);
+void DEFINE_Delay_s(unsigned char secs);
+void DEFINE_Delay_mins(unsigned char minutes);
 //----------------------------------------------------------
 #define DEFINE_WAIT(VALUE,TIME_ms)  for(U32 DEFINE_Time = RESET; ((DEFINE_Time<TIME_ms)&&(VALUE)); DEFINE_Time++){DEFINE_Delay(1 MSec);}
 //----------------------------------------------------------

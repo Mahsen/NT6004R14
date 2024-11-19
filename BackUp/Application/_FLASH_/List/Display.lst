@@ -1,0 +1,120 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V7.30.3.1659 for Microchip AVR       13/Sep/2024  17:30:02
+# Copyright 1996-2020 IAR Systems AB.
+#
+#    Source file  =  
+#        D:\Project\NewStructure\NT6004R14\Application\Module\Display.cpp
+#    Command line =  
+#        -f C:\Users\Mohammad\AppData\Local\Temp\EWB4F8.tmp
+#        (D:\Project\NewStructure\NT6004R14\Application\Module\Display.cpp
+#        --cpu=m32 -ms -o
+#        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\Obj -D NDEBUG
+#        -lC D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List -lA
+#        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List
+#        --initializers_in_flash --no_cse --no_inline --no_code_motion
+#        --no_cross_call --no_clustering --no_tbaa --debug
+#        -DENABLE_BIT_DEFINITIONS -e -I
+#        D:\Project\NewStructure\NT6004R14\Application\Application\\ -I
+#        D:\Project\NewStructure\NT6004R14\Application\Core\\ -I
+#        D:\Project\NewStructure\NT6004R14\Application\Driver\\ -I
+#        D:\Project\NewStructure\NT6004R14\Application\Config\\ -I
+#        D:\Project\NewStructure\NT6004R14\Application\Module\\ -I
+#        D:\Project\NewStructure\NT6004R14\Application\Class\\ --eeprom_size
+#        1024 --dlib --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 8.4\avr\LIB\DLIB\dlAVR-3s-ec_mul-sf-n.h" --ec++ -On)
+#    Locale       =  English_USA.1252
+#    List file    =  
+#        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\List\Display.lst
+#    Object file  =  
+#        D:\Project\NewStructure\NT6004R14\Application\_FLASH_\Obj\Display.r90
+#
+###############################################################################
+
+D:\Project\NewStructure\NT6004R14\Application\Module\Display.cpp
+      1          /************************************************** Description *******************************************************/
+      2          /*
+      3              File : display.cpp
+      4              Programmer : Mohammad Lotfi
+      5              Used : Manage display
+      6              Design Pattern : singleton
+      7              Types of memory : Nothing
+      8              Total Tread : Nothing
+      9              Site : https://www.mahsen.ir
+     10              Tel : +989124662703
+     11              Email : info@mahsen.ir
+     12              Last Update : 2023/6/10
+     13          */
+     14          /************************************************** Warnings **********************************************************/
+     15          /*
+     16              Nothing
+     17          */
+     18          /************************************************** Wizards ***********************************************************/
+     19          /*
+     20              Nothing
+     21          */
+     22          /************************************************** Includes **********************************************************/
+     23          #include "display.hpp"
+     24          /************************************************** Defineds **********************************************************/
+     25          /*
+     26              Nothing
+     27          */
+     28          /************************************************** Names *************************************************************/
+     29          /*
+     30              Nothing
+     31          */
+     32          /************************************************** Variables *********************************************************/
+
+   \                                 In  segment NEAR_Z, align 1, keep-with-next
+   \   00000000                      REQUIRE `?<Segment init: NEAR_Z>`
+     33          Display* Display::Instance = NULL;
+   \                     ??Instance:
+   \   00000000                      DS8 2
+     34          /************************************************** Opjects ***********************************************************/
+
+   \                                 In  segment CODE, align 2, keep-with-next
+     35          void Display::Icon(U16 Icons, bool Show) {
+   \                     ??Icon:
+     36            
+     37          }
+   \   00000000   9508               RET
+     38          /************************************************** Functions *********************************************************/
+     39          /*
+     40              Nothing
+     41          */
+     42          /************************************************** Tasks *************************************************************/
+     43          /*
+     44              Nothing
+     45          */
+     46          /************************************************** Vectors ***********************************************************/
+     47          /*
+     48              Nothing
+     49          */
+     50          /**********************************************************************************************************************/
+     51          
+
+   Maximum stack usage in bytes:
+
+   RSTACK Function
+   ------ --------
+      2   Display::Icon(U16, bool)
+
+
+   Segment part sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  Display::Icon(U16, bool)
+       2  Display::Instance
+       6  -- Other
+
+ 
+ 2 bytes in segment CODE
+ 6 bytes in segment INITTAB
+ 2 bytes in segment NEAR_Z
+ 
+ 2 bytes of CODE memory (+ 6 bytes shared)
+ 2 bytes of DATA memory
+
+Errors: none
+Warnings: none

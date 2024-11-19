@@ -1,0 +1,40 @@
+#Generating source browse information for project main
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build defines.pbi : index defines.xcl
+build adc.pbi : index adc.xcl
+build gpio.pbi : index gpio.xcl
+build lcd.pbi : index lcd.xcl
+build timer.pbi : index timer.xcl
+build main.pbi : index main.xcl
+build Clock.pbi : index Clock.xcl
+build Relay.pbi : index Relay.xcl
+build Switch.pbi : index Switch.xcl
+build Temp.pbi : index Temp.xcl
+build main_part0.pbi : link defines.pbi adc.pbi gpio.pbi
+build main_part1.pbi : link lcd.pbi timer.pbi main.pbi
+build main_part2.pbi : link Clock.pbi Relay.pbi Switch.pbi
+build main_part3.pbi : link Temp.pbi
+build main.pbd : link main_part0.pbi main_part1.pbi main_part2.pbi main_part3.pbi
+build main.pbw : browsedata main.pbd
+
+
